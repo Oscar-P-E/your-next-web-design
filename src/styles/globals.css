@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --dark: rgb(26, 27, 38);
+  --oj: rgb(248, 79, 56);
+  --sky: rgb(0, 212, 255);
+  --green: rgb(74 222 128);
+}
+
+/* @layer base {
+  html {
+    @apply bg-dark;
+  }
+} */
+
+.text-gradient-animation:hover {
+  background: linear-gradient(
+    90deg,
+    var(--oj),
+    var(--oj),
+    var(--oj),
+    var(--oj),
+    var(--oj),
+    var(--oj),
+    var(--sky),
+    var(--green),
+    var(--oj),
+    var(--sky),
+    var(--green),
+    var(--oj)
+  );
+  background-size: 200%;
+  -webkit-animation: gradient 0.8s ease-out;
+  -moz-animation: gradient 0.8s ease-out;
+  animation: gradient 0.8s ease-out;
+  @apply bg-clip-text text-transparent;
+}
+
+/* .text-gradient-animation:hover {
+  -webkit-animation: gradient 0.7s linear infinite;
+  -moz-animation: gradient 0.7s linear infinite;
+  animation: gradient 0.7s linear infinite;
+} */
+
+@keyframes gradient {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: 200% center;
+  }
+}
