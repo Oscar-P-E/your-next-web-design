@@ -10,6 +10,10 @@ import {
   FingerPrintIcon,
   SquaresPlusIcon,
   XMarkIcon,
+  DevicePhoneMobileIcon,
+  CurrencyDollarIcon,
+  RocketLaunchIcon,
+  EnvelopeIcon,
 } from "@heroicons/react/24/outline";
 import {
   ChevronDownIcon,
@@ -19,22 +23,23 @@ import {
 
 const products = [
   {
-    name: "Analytics",
-    description: "Get a better understanding of your traffic",
+    name: "Website Design & Development",
+    description:
+      "Get your business online with a professional and effective website",
+    href: "#",
+    icon: RocketLaunchIcon as React.ElementType,
+  },
+  {
+    name: "Website Redesign & Optimisation",
+    description: "Take your website to the next level",
     href: "#",
     icon: ChartPieIcon as React.ElementType,
   },
   {
-    name: "Engagement",
-    description: "Speak directly to your customers",
+    name: "Responsive Design",
+    description: "More than half of your visitors are on mobile",
     href: "#",
-    icon: CursorArrowRaysIcon as React.ElementType,
-  },
-  {
-    name: "Security",
-    description: "Your customers’ data will be safe and secure",
-    href: "#",
-    icon: FingerPrintIcon as React.ElementType,
+    icon: DevicePhoneMobileIcon as React.ElementType,
   },
   {
     name: "Integrations",
@@ -43,15 +48,25 @@ const products = [
     icon: SquaresPlusIcon as React.ElementType,
   },
   {
-    name: "Automations",
-    description: "Build strategic funnels that will convert",
+    name: "Conversion & SEO Optimisation",
+    description: "Get visitors and turn them into customers",
     href: "#",
-    icon: ArrowPathIcon as React.ElementType,
+    icon: CurrencyDollarIcon as React.ElementType,
+  },
+  {
+    name: "Logos & Branding",
+    description: "Professional and memorable branding",
+    href: "#",
+    icon: FingerPrintIcon as React.ElementType,
   },
 ];
 const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon as React.ElementType },
-  { name: "Contact sales", href: "#", icon: PhoneIcon as React.ElementType },
+  {
+    name: "Questions?",
+    href: "#",
+    icon: EnvelopeIcon as React.ElementType,
+  },
+  { name: "Call Now", href: "#", icon: PhoneIcon as React.ElementType },
 ];
 
 function classNames(...classes: string[]) {
@@ -62,21 +77,24 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white">
+    <header className="h-[4.5rem] bg-white">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5 font-black text-dark">
+          <a
+            href="#"
+            className="text-gradient-animation-dark -m-1.5 scale-125 p-1.5 font-black text-slate-900"
+          >
             <span className="sr-only">Your Next Web Design</span>Y
-            <span className="-ml-0.5 italic text-oj ">N</span>WD
+            <span className="text-oj-500 -ml-0.5 text-clip italic">N</span>WD
           </a>
         </div>
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="text-text-slate-700 -m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -85,18 +103,24 @@ export default function Example() {
         </div>
 
         <Popover.Group className="z-20 hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 text-slate-900"
+          >
             Home
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 text-slate-900"
+          >
             About
           </a>
 
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-slate-900">
               Services
               <ChevronDownIcon
-                className="h-5 w-5 flex-none text-gray-400"
+                className="h-5 w-5 flex-none text-slate-400"
                 aria-hidden="true"
               />
             </Popover.Button>
@@ -110,42 +134,44 @@ export default function Example() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-slate-900/5">
                 <div className="p-4">
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-slate-50"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-slate-50 group-hover:bg-white">
                         <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                          className="h-6 w-6 text-slate-600 group-hover:text-indigo-600"
                           aria-hidden="true"
                         />
                       </div>
                       <div className="flex-auto">
                         <a
                           href={item.href}
-                          className="block font-semibold text-gray-900"
+                          className="block font-semibold text-slate-900"
                         >
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        <p className="mt-1 text-slate-600">
+                          {item.description}
+                        </p>
                       </div>
                     </div>
                   ))}
                 </div>
 
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                <div className="grid grid-cols-2 divide-x divide-slate-900/5 bg-slate-50">
                   {callsToAction.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-slate-900 hover:bg-slate-100"
                     >
                       <item.icon
-                        className="h-5 w-5 flex-none text-gray-400"
+                        className="h-5 w-5 flex-none text-slate-400"
                         aria-hidden="true"
                       />
                       {item.name}
@@ -156,7 +182,10 @@ export default function Example() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 text-slate-900"
+          >
             Contact
           </a>
         </Popover.Group>
@@ -164,7 +193,7 @@ export default function Example() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href="#"
-            className="text-gradient-animation rounded-3xl border-2 border-oj px-2 text-sm font-semibold leading-6 text-oj"
+            className="text-oj-500 text-base font-semibold leading-6 transition-all duration-300 ease-in-out"
           >
             Website Pricing <span aria-hidden="true">&rarr;</span>
           </a>
@@ -178,15 +207,15 @@ export default function Example() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5 font-black">
               <span className="sr-only">Your Next Web Design</span>Y
-              <span className="-ml-0.5 italic text-oj ">N</span>WD
+              <span className="text-oj-500 -ml-0.5 italic">N</span>WD
             </a>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="text-text-slate-700 -m-2.5 rounded-md p-2.5"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -194,17 +223,17 @@ export default function Example() {
             </button>
           </div>
           <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
+            <div className="-my-6 divide-y divide-slate-500/10">
               <div className="space-y-2 py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50"
                 >
                   Home
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50"
                 >
                   About
                 </a>
@@ -212,7 +241,7 @@ export default function Example() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50">
                         Services
                         <ChevronDownIcon
                           className={classNames(
@@ -228,7 +257,7 @@ export default function Example() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-slate-900 hover:bg-slate-50"
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -240,7 +269,7 @@ export default function Example() {
 
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50"
                 >
                   Contact
                 </a>
@@ -248,7 +277,7 @@ export default function Example() {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50"
                 >
                   See Pricing <span aria-hidden="true">&rarr;</span>
                 </a>

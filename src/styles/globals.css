@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --dark: rgb(26, 27, 38);
-  --oj: rgb(248, 79, 56);
-  --sky: rgb(0, 212, 255);
-  --green: rgb(74 222 128);
+  --dark: rgb(30, 41, 59); /* slate-800 */
+  --oj: hsl(7, 93%, 60%); /* oj-500 */
+  --sky: hsl(190, 100%, 50%);
+  --green: hsl(142, 69%, 58%);
+  --yellow: hsl(49, 90%, 50%);
+  --light: rgb(241 245 249);
 }
 
 /* @layer base {
@@ -15,7 +17,7 @@
   }
 } */
 
-.text-gradient-animation:hover {
+.text-gradient-animation-oj:hover {
   background: linear-gradient(
     90deg,
     var(--oj),
@@ -25,16 +27,64 @@
     var(--oj),
     var(--oj),
     var(--sky),
-    var(--green),
+    var(--yellow),
     var(--oj),
     var(--sky),
-    var(--green),
+    var(--yellow),
     var(--oj)
   );
   background-size: 200%;
-  -webkit-animation: gradient 0.8s ease-out;
-  -moz-animation: gradient 0.8s ease-out;
-  animation: gradient 0.8s ease-out;
+  -webkit-animation: gradient 1s linear;
+  -moz-animation: gradient 1s linear;
+  animation: gradient 1s linear;
+  @apply bg-clip-text text-transparent;
+}
+
+.text-gradient-animation-dark:hover {
+  background: linear-gradient(
+    90deg,
+    var(--dark),
+    var(--dark),
+    var(--dark),
+    var(--dark),
+    var(--dark),
+    var(--dark),
+    var(--sky),
+    var(--yellow),
+    var(--light),
+    var(--sky),
+    var(--yellow),
+    var(--light)
+  );
+  background-size: 200%;
+  -webkit-animation: gradient 1s linear;
+  -moz-animation: gradient 1s linear;
+  animation: gradient 1s linear;
+  @apply bg-clip-text text-transparent;
+}
+
+.text-gradient-animation-light {
+  background: linear-gradient(
+    90deg,
+    var(--light),
+    var(--light),
+    var(--light),
+    var(--light),
+    var(--light),
+    var(--light),
+    var(--sky),
+    var(--yellow),
+    var(--light),
+    var(--green),
+    var(--sky),
+    var(--yellow),
+    var(--light),
+    var(--green)
+  );
+  background-size: 200%;
+  -webkit-animation: gradient 1s linear;
+  -moz-animation: gradient 1s linear;
+  animation: gradient 1s linear infinite;
   @apply bg-clip-text text-transparent;
 }
 
@@ -49,6 +99,56 @@
     background-position: 0% center;
   }
   to {
-    background-position: 200% center;
+    background-position: -200% center;
   }
+}
+
+@keyframes flicker {
+  0%,
+  19% {
+    opacity: 0.8;
+  }
+  20% {
+  }
+  21%,
+  23% {
+    opacity: 0.6;
+  }
+  24%,
+  26% {
+    opacity: 0.8;
+  }
+  27%,
+  29% {
+    opacity: 0.6;
+  }
+  30%,
+  32% {
+    opacity: 0.9;
+  }
+  33% {
+    opacity: 0.7;
+  }
+  34%,
+  36% {
+    opacity: 1;
+  }
+  37% {
+    opacity: 0.6;
+  }
+  38%,
+  45% {
+    opacity: 1;
+  }
+  46%,
+  49% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.image-lights-on {
+  animation: flicker 2.5s linear forwards;
 }

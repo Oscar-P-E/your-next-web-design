@@ -25,23 +25,23 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="h-screen w-full">
+    <div className="h-[calc(85svh-4.5rem)] w-full">
       <div
-        className="absolute z-10 grid h-screen w-[80%] place-items-center overflow-hidden bg-dark md:w-[69.2%]"
+        className="absolute z-10 grid h-[calc(85svh-4.5rem)] w-[80%] place-items-center overflow-hidden bg-slate-800 md:w-[69.2%]"
         ref={leftRef}
       >
-        <h2 className="mx-[10vw] w-[80vw] text-[12vw] font-bold text-white md:mx-[27vw] md:w-[46vw] md:text-[7vw]">
+        <h2 className="mx-[10vw] w-[80vw] text-[12vw] font-extrabold text-white md:mx-[27vw] md:w-[46vw] md:text-[7vw]">
           Your{" "}
-          <span className="font-cursive text-[1.8em] font-normal leading-none text-oj">
+          <span className="text-oj-500 font-cursive text-[1.8em] font-normal leading-none">
             next
           </span>
           <br />
           Web Design
         </h2>
       </div>
-      <div className="absolute right-0 grid h-screen place-items-center overflow-hidden bg-oj">
+      <div className="bg-oj-600 absolute right-0 grid h-[calc(85svh-4.5rem)] place-items-center overflow-hidden">
         {/* non-mobile devices will have a scrollbar, so we need to translate right a bit  */}
-        <h2 className="mx-[10vw] w-[80vw] text-[12vw] font-bold text-dark md:mx-[27vw] md:w-[46vw] md:text-[7vw] lg:translate-x-[14px]">
+        <h2 className="mx-[10vw] w-[80vw] text-[12vw] font-extrabold text-slate-950 md:mx-[27vw] md:w-[46vw] md:text-[7vw] lg:translate-x-[14px]">
           Your{" "}
           <span className="font-cursive text-[1.8em] font-normal leading-none text-white">
             best
