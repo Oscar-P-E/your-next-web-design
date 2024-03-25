@@ -118,7 +118,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="divider-1">
+      <div id="startBlob" className="divider-1">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"

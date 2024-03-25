@@ -1,7 +1,8 @@
-import Hero from "./components/Hero";
+import Hero from "./home/components/Hero";
 import Header from "./components/Header";
-import About from "./components/About";
-import Services from "./components/Services";
+import About from "./home/components/About";
+import Services from "./home/components/Services";
+import GlowingBlob from "./components/GlowingBlob";
 
 export default function App() {
   return (
@@ -10,29 +11,7 @@ export default function App() {
       <Hero />
       <About />
       <Services />
-      <div className="h-[200%]">
-        <h1>Footer</h1>
-        <p>
-          Dolor sit amet, consectetur adipiscing elit. Nunc eget lorem
-          consectetur, lacinia nunc nec, tincidunt mi. Donec ac justo
-          consectetur, lacinia nunc nec, tincidunt mi. Donec ac justo.
-        </p>
-
-        <p>
-          Dolor sit amet, consectetur adipiscing elit. Nunc eget lorem
-          consectetur, lacinia nunc nec, tincidunt mi. Donec ac justo
-          consectetur, lacinia nunc nec, tincidunt mi. Donec ac justo.
-        </p>
-
-        <p>
-          Dolor sit amet, consectetur adipiscing elit. Nunc eget lorem
-          consectetur, lacinia nunc nec, tincidunt mi. Donec ac justo
-          consectetur, lacinia nunc nec, tincidunt mi. Donec ac justo. Dolor sit
-          amet, consectetur adipiscing elit. Nunc eget lorem consectetur,
-          lacinia nunc nec, tincidunt mi. Donec ac justo consectetur, lacinia
-          nunc nec, tincidunt mi. Donec ac justo.
-        </p>
-      </div>
+      <GlowingBlob />
     </main>
   );
 }
