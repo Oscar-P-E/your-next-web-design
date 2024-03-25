@@ -9,6 +9,11 @@
   --green: hsl(142, 69%, 58%);
   --yellow: hsl(49, 90%, 50%);
   --light: rgb(241 245 249);
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+  --c900: rgb(15, 23, 42);
+  --g600: rgb(34, 197, 94);
 }
 
 /* @layer base {
@@ -88,6 +93,31 @@
   @apply bg-clip-text text-transparent;
 }
 
+.bg-gradient-animation-g500:hover {
+  background: linear-gradient(
+    90deg,
+    var(--g600),
+    var(--g600),
+    var(--g600),
+    var(--g600),
+    var(--g600),
+    var(--g600),
+    var(--g600),
+    var(--g600),
+    var(--sky),
+    var(--yellow),
+    var(--light),
+    var(--sky),
+    var(--yellow),
+    var(--light),
+    var(--g600)
+  );
+  background-size: 200%;
+  -webkit-animation: gradient 1s ease-in-out reverse;
+  -moz-animation: gradient 1s ease-in-out reverse;
+  animation: gradient 1s ease-in-out reverse;
+}
+
 /* .text-gradient-animation:hover {
   -webkit-animation: gradient 0.7s linear infinite;
   -moz-animation: gradient 0.7s linear infinite;
@@ -102,6 +132,8 @@
     background-position: -200% center;
   }
 }
+
+/* lights flickering on animation */
 
 @keyframes flicker {
   0%,
@@ -151,4 +183,85 @@
 
 .image-lights-on {
   animation: flicker 2.5s linear forwards;
+}
+
+/* custom component divider shapes */
+
+.divider-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.divider-1 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 500px;
+}
+
+.divider-1 .shape-fill {
+  fill: #020617;
+}
+
+/* magical text effect */
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+
+.magic-text {
+  display: inline-block;
+  position: relative;
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--c900),
+    var(--c900),
+    var(--sky),
+    var(--c900),
+    var(--c900)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+/* magic gradient effect */
+
+.magic-gradient {
+  display: inline-block;
+  position: relative;
+  animation: background-pan-2 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--green),
+    var(--green),
+    var(--light),
+    var(--green),
+    var(--green)
+  );
+  background-size: 200%;
+  white-space: nowrap;
+}
+
+@keyframes background-pan-2 {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
 }

@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import Header from "./components/Header";
 import About from "./components/About";
+import Services from "./components/Services";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Header />
       <Hero />
       <About />
+      <Services />
       <div className="h-[200%]">
         <h1>Footer</h1>
         <p>

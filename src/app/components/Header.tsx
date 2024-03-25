@@ -77,7 +77,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="h-[4.5rem] bg-white">
+    <header className="sticky top-0 z-50 h-[4.5rem] bg-white">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -88,7 +88,7 @@ export default function Example() {
             className="text-gradient-animation-dark -m-1.5 scale-125 p-1.5 font-black text-slate-900"
           >
             <span className="sr-only">Your Next Web Design</span>Y
-            <span className="text-oj-500 -ml-0.5 text-clip italic">N</span>WD
+            <span className="-ml-0.5 text-clip italic text-oj-500">N</span>WD
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -193,7 +193,7 @@ export default function Example() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href="#"
-            className="text-oj-500 text-base font-semibold leading-6 transition-all duration-300 ease-in-out"
+            className="text-base font-semibold leading-6 text-oj-500 transition-all duration-300 ease-in-out"
           >
             Website Pricing <span aria-hidden="true">&rarr;</span>
           </a>
@@ -211,7 +211,7 @@ export default function Example() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5 font-black">
               <span className="sr-only">Your Next Web Design</span>Y
-              <span className="text-oj-500 -ml-0.5 italic">N</span>WD
+              <span className="-ml-0.5 italic text-oj-500">N</span>WD
             </a>
             <button
               type="button"

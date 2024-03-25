@@ -32,14 +32,14 @@ export default function Hero() {
       >
         <h2 className="mx-[10vw] w-[80vw] text-[12vw] font-extrabold text-white md:mx-[27vw] md:w-[46vw] md:text-[7vw]">
           Your{" "}
-          <span className="text-oj-500 font-cursive text-[1.8em] font-normal leading-none">
+          <span className="font-cursive text-[1.8em] font-normal leading-none text-oj-500">
             next
           </span>
           <br />
           Web Design
         </h2>
       </div>
-      <div className="bg-oj-600 absolute right-0 grid h-[calc(85svh-4.5rem)] place-items-center overflow-hidden">
+      <div className="absolute right-0 grid h-[calc(85svh-4.5rem)] place-items-center overflow-hidden bg-oj-500">
         {/* non-mobile devices will have a scrollbar, so we need to translate right a bit  */}
         <h2 className="mx-[10vw] w-[80vw] text-[12vw] font-extrabold text-slate-950 md:mx-[27vw] md:w-[46vw] md:text-[7vw] lg:translate-x-[14px]">
           Your{" "}
