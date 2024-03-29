@@ -9,7 +9,7 @@ import { Permanent_Marker } from "next/font/google";
 //   variable: "--font-sans",
 // });
 
-export const montserrat = Montserrat({
+const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-sans",
 });
