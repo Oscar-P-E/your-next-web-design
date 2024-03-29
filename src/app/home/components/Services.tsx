@@ -1,63 +1,109 @@
-"use client";
+import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 
 export default function Services() {
   return (
-    <div className="relative overflow-hidden bg-slate-950 py-72 text-white">
-      <div className="">
-        <div>
-          <h2 className="pb-24 text-center text-6xl font-bold">Our Services</h2>
-          <div className="grid grid-flow-col grid-cols-2">
-            <div className="relative">
-              <svg
-                width="0"
-                height="0"
-                viewBox="0 0 700 700"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs>
-                  <mask id="complexMask" maskUnits="userSpaceOnUse">
-                    <path
-                      d="M537.827 9.245A11.5 11.5 0 0 1 549.104 0h63.366c7.257 0 12.7 6.64 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 586.87 151h-28.275a15.999 15.999 0 0 0-15.689 12.862l-59.4 297c-1.98 9.901 5.592 19.138 15.689 19.138h17.275l .127.001c.85.009 1.701.074 2.549.009 11.329-.874 21.411-7.529 24.88-25.981.002-.012.016-.016.023-.007.008.009.022.005.024-.006l24.754-123.771A11.5 11.5 0 0 1 580.104 321h63.366c7.257 0 12.7 6.639 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 617.87 472H559c-22.866 0-28.984 7.98-31.989 25.931-.004.026-.037.035-.052.014-.015-.02-.048-.013-.053.012l-24.759 123.798A11.5 11.5 0 0 1 490.87 631h-29.132a14.953 14.953 0 0 0-14.664 12.021c-4.3 21.502-23.18 36.979-45.107 36.979H83.502c-29.028 0-50.8-26.557-45.107-55.021l102.4-512C145.096 91.477 163.975 76 185.902 76h318.465c10.136 0 21.179-5.35 23.167-15.288l10.293-51.467Zm-512 160A11.5 11.5 0 0 1 37.104 160h63.366c7.257 0 12.7 6.639 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 74.87 311H11.504c-7.257 0-12.7-6.639-11.277-13.755l25.6-128Z"
-                      fill="#FFFFFF"
-                    />
-                  </mask>
-                </defs>
-                {/* This rectangle applies the mask to the entire SVG area */}
-                <rect
-                  width="100%"
-                  height="100%"
-                  mask="url(#complexMask)"
-                  fill="black"
-                />
-              </svg>
-
-              <img
-                src="/img/coding-laptop.jpg"
-                alt="Website Design"
-                className=""
-                style={{
-                  mask: "url(#complexMask)",
-                  WebkitMask: "url(#complexMask)",
-                }}
-              />
+    <div className="bg-opacity- mx-auto rounded-[3rem] bg-white bg-opacity-50 py-48 font-medium text-black">
+      <div className="mx-auto w-[95vw] max-w-7xl px-[2vw]">
+        <h2 className="pb-24 text-center text-8xl font-semibold tracking-tight text-slate-800">
+          Our Services
+        </h2>
+        <div className="flex flex-col justify-center gap-x-[2vw] gap-y-4 lg:flex-row">
+          {/* blue card */}
+          <div className="h-fit rounded-3xl transition-all duration-500 hover:scale-[1.03] hover:shadow-xl lg:w-1/3">
+            <div className="rounded-t-3xl bg-cyan-400 px-12 py-8 text-6xl font-semibold tracking-tight text-slate-950 lg:px-[3vw] xl:px-12">
+              Website <span className="font- text-white">Redesign</span>
             </div>
-            <div className="mx-auto flex w-[95vw] max-w-7xl flex-col justify-center gap-4 px-4">
-              <div className="grow rounded-3xl bg-slate-800 bg-opacity-80 p-4">
-                <h3 className="p-4 text-xl">Website Design and Development</h3>
-              </div>
-              <div className="grow rounded-3xl bg-slate-800 bg-opacity-40 p-4">
-                <h3 className="p-4 text-xl">
-                  Website Redesign and Optimisation
-                </h3>
-              </div>
-              <div className="grow rounded-3xl bg-slate-800 bg-opacity-60 p-4">
-                <h3 className="p-4 text-xl">Logos and Branding</h3>
-              </div>
+            <div className="flex flex-col rounded-b-3xl bg-cyan-500 px-12 py-8 text-xl lg:px-[3vw] xl:px-12">
+              <p className="pb-4">
+                Your website design accounts for about 75% of the evaluation of
+                your company&apos;s credibility.
+                <div className="inline-flex align-top">
+                  <a href="#" className="p-0.5 text-xs font-bold opacity-50">
+                    (source)
+                  </a>
+                </div>
+              </p>
+              <p className="pb-8">
+                Level up your business with a website that keeps you looking
+                up-to-date, on all screen sizes, with the latest search engine
+                optimisation and conversion optimisation techniques.
+              </p>
+              <a
+                href="#"
+                className="flex items-center gap-2 rounded-3xl bg-black bg-opacity-10 px-4 py-2.5 text-lg font-semibold text-white opacity-90 transition-all hover:bg-white hover:text-black"
+              >
+                <ArrowUpRightIcon className="h-7 w-7" />
+                Get Better
+              </a>
+            </div>
+          </div>
+
+          {/* orange card */}
+          <div className="h-fit rounded-3xl transition-all duration-500 hover:scale-[1.03] hover:shadow-xl lg:w-1/3">
+            <div className="rounded-t-3xl bg-oj-400 px-12 py-8 text-6xl font-semibold tracking-tight text-slate-950 lg:px-[3vw] xl:px-12">
+              Website <span className="text-white">Creation</span>
+            </div>
+            <div className="flex flex-col rounded-b-3xl bg-oj-500 px-12 py-8 text-xl lg:px-[3vw] xl:px-12">
+              <p className="pb-4 text-white">
+                I will create for you a beautifully designed website from
+                scratch that prioritises user exerience (UX) and conversion.
+              </p>
+              <p className="pb-4"></p>
+              <p className="pb-4">
+                Because over 50% of your visitors are on mobile,
+                <div className="inline-flex align-top">
+                  <a
+                    href="https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide"
+                    className="p-0.5 text-xs font-bold opacity-50"
+                  >
+                    (source)
+                  </a>
+                </div>{" "}
+                a lot of attention will be given to the mobile experience.
+              </p>
+              <p className="pb-8">
+                Your website will be search engine optimised (SEO) and
+                conversion optimised using the latest data-supported practices.
+              </p>
+              <a
+                href="#"
+                className="flex items-center gap-2 rounded-3xl bg-black bg-opacity-10 px-4 py-2.5 text-lg font-semibold text-white opacity-90 transition-all hover:bg-white hover:text-black"
+              >
+                <ArrowUpRightIcon className="h-7 w-7" />
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          {/* green card */}
+          <div className="h-fit rounded-3xl transition-all duration-500 hover:scale-[1.03] hover:shadow-xl lg:w-1/3">
+            <div className="rounded-t-3xl bg-emerald-400 px-12 py-8 text-6xl font-semibold tracking-tight text-slate-950 lg:px-[3vw] xl:px-12">
+              <span className="whitespace-nowrap">
+                Logos <span className="font-bold text-emerald-600">&</span>
+              </span>{" "}
+              <span className="font- text-white">Branding</span>
+            </div>
+            <div className="flex flex-col rounded-b-3xl bg-emerald-500 px-12 py-8 text-xl lg:px-[3vw] xl:px-12">
+              <p className="pb-4">
+                I will work with you to create logos, colour schemes,
+                typography, and other branding elements that set the tone for
+                your business.
+              </p>
+              <p className="pb-8">
+                Your branding will be designed to be consistent across all
+                platforms, from your website to your social media profiles.
+              </p>
+              <a
+                href="#"
+                className="flex items-center gap-2 rounded-3xl bg-black bg-opacity-10 px-4 py-2.5 text-lg font-semibold text-white opacity-90 transition-all hover:bg-white hover:text-black"
+              >
+                <ArrowUpRightIcon className="h-7 w-7" />
+                Get Recognised
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div id="endBlob"></div>
     </div>
   );
 }

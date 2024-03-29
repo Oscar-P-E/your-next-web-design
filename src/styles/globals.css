@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* very handy */
+
+:root {
+  --header-height: 4.5rem;
+}
+
+/* colors */
+
 :root {
   --dark: rgb(30, 41, 59); /* slate-800 */
   --oj: hsl(7, 93%, 60%); /* oj-500 */
@@ -13,8 +21,23 @@
   --violet: rgb(103, 58, 183);
   --pink: rgb(244, 143, 177);
   --c900: rgb(15, 23, 42);
+  --cyan900: rgb(22, 78, 99);
+  --cyan800: rgb(21, 94, 117);
   --g500: rgb(34, 197, 94);
+  --s950: rgb(2, 6, 23);
+  --rose300: rgb(253, 164, 175);
 }
+
+@layer base {
+  html {
+    position: relative;
+    background-color: white;
+    background-attachment: fixed;
+      background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23111827' fill-opacity='0.14' fill-rule='evenodd'/%3E%3C/svg%3E");
+    @apply pan;
+  }
+}
+
 
 /* various gradient hover swipe animations */
 
@@ -216,11 +239,12 @@
   animation: background-pan 3s linear infinite;
   background: linear-gradient(
     to right,
-    var(--c900),
-    var(--c900),
-    var(--sky),
-    var(--c900),
-    var(--c900)
+    var(--s950),
+    var(--s950),
+    var(--cyan800),
+    var(--s950)
+
+
   );
   background-size: 200%;
   -webkit-background-clip: text;
@@ -292,3 +316,20 @@
   z-index: 2;
   backdrop-filter: blur(200px);
 } */
+
+/* bg pan */
+
+@keyframes pan;
+ {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+ }
+
+.pan {
+  animation: pan 180s linear forwards infinite;
+  will-change: background-position;
+}
