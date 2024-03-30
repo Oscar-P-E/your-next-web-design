@@ -34,19 +34,19 @@ export default function About() {
 
   return (
     <>
-
-
       <div className="relative -mb-48 pb-24 pt-24 tracking-tight">
         {/* card 1 */}
         <div className="sticky top-[calc(1rem+var(--header-height))] mx-auto mb-[calc(12rem+2px)] grid min-h-[calc(95svh-var(--header-height))] w-[95%] grid-flow-row grid-cols-2 rounded-[5rem] bg-white">
-          <div className=" lg:leading-[3.3rem flex flex-col justify-center rounded-l-[5rem] bg-cyan-500 px-[6vw] py-4 text-3xl font-semibold text-white lg:text-5xl lg:leading-[3.3rem]">
-            <p className="pb-8 ">
-              Are you tired of{" "}
-              <span className="font-extrabold text-cyan-300"> annoying </span>
+          <div className="flex flex-col justify-center rounded-l-[5rem] bg-cyan-500 px-[6vw] py-4 text-3xl font-semibold text-white lg:text-5xl lg:leading-[3.3rem]">
+            <p className="pb-8">
+              Nobody wants an{" "}
+              <span className="font-bold text-cyan-950"> annoying </span>
               and
-              <span className="font-extrabold text-cyan-900"> confusing </span>
-              websites that take forever{" "}
-              <span className="whitespace-nowrap">to load?</span>
+              <span className="font-bold text-cyan-950"> confusing </span>
+              website,
+            </p>
+            <p className="font- ">
+              but this is often what you get when you hire a web designer.
             </p>
           </div>
 
@@ -71,7 +71,7 @@ export default function About() {
             ></div>
           </div>
           <div className="lg:leading-[3.3rem flex flex-col justify-center rounded-r-[5rem] bg-oj-500 px-[6vw] py-4 text-3xl font-semibold text-white lg:text-5xl lg:leading-[3.3rem]">
-            <p className="">
+            <p className="pb-8">
               Our websites are not only{" "}
               <span className="">
                 <span className="magic-text font-extrabold text-transparent">
@@ -84,23 +84,27 @@ export default function About() {
                 </span>
               </span>
             </p>
+            <p className="font-extrabold text-slate-900">
+              Your website should help you get clients and make sales.
+            </p>
           </div>
         </div>
 
         {/* card 3 */}
         <div className="sticky top-[calc(1rem+var(--header-height)-3px)] mx-auto mb-[calc(12rem)] grid min-h-[calc(95svh-var(--header-height)+4px)] w-[95%] -rotate-0 grid-flow-row grid-cols-2 gap-0 rounded-[5rem] bg-white">
           <div className="bg-opacity-  flex flex-col justify-center rounded-l-[5rem] bg-emerald-500 px-[6vw] pb-4 pt-8 text-4xl font-semibold text-white lg:text-5xl lg:leading-[3.3rem]">
+            <p className="pb-8">Take your business to the next level.</p>
             <p>
-              Get a professional website <br />
+              Get a professional website{" "}
+              <span className="font-extrabold text-emerald-950">
+                with a purpose.
+              </span>
             </p>
-            <span className="font-extrabold text-emerald-950">
-              with a purpose
-            </span>
             <a
               href="#"
               className="mt-8 flex w-fit items-center gap-2 rounded-3xl bg-white px-5 py-2.5 text-lg font-semibold text-black opacity-90 transition-all hover:opacity-100"
             >
-              See Our Pricing <span aria-hidden="true">&rarr;</span>
+              Get Started <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
 
