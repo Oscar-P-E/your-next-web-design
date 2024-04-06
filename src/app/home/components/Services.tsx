@@ -22,11 +22,11 @@ export default function Services() {
               <p className="pb-4">
                 Your website design accounts for about 75% of the evaluation of
                 your credibility.
-                <div className="inline-flex align-top">
+                <span className="inline-flex align-top">
                   <a href="#" className="p-0.5 text-xs font-bold opacity-50">
                     (source)
                   </a>
-                </div>
+                </span>
               </p>
               <p>
                 Most of that evaluation is based on things such as the user
@@ -60,14 +60,14 @@ export default function Services() {
               <p className="pb-4"></p>
               <p className="pb-4">
                 Because over 50% of your visitors are on mobile,
-                <div className="inline-flex align-top">
+                <span className="inline-flex align-top">
                   <a
                     href="https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide"
                     className="p-0.5 text-xs font-bold opacity-50"
                   >
                     (source)
                   </a>
-                </div>{" "}
+                </span>{" "}
                 a lot of attention will be given to the mobile experience.
               </p>
               <p className="pb-8">

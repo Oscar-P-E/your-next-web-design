@@ -8,6 +8,7 @@ export default {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
         cursive: ["var(--font-cursive)", "cursive", ...fontFamily.serif],
+        mono: ["var(--font-mono)", ...fontFamily.mono],
       },
       colors: {
         oj: {
