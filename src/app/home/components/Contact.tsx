@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { type MouseEvent, useState } from "react";
 import { RocketLaunchIcon } from "@heroicons/react/24/outline";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import { z } from "zod";
+import emailjs from "@emailjs/browser";
 import "react-phone-number-input/style.css";
 
 const formSchema = z.object({
@@ -56,20 +57,38 @@ export default function Contact() {
     }
   };
 
-  const handlePhoneNumberSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitAttempted(true);
-    if (phoneNumber && isValidPhoneNumber(phoneNumber)) {
-      setStep(step + 1);
-      console.log(
-        "Name:",
-        name,
-        "Contact Method:",
-        contactMethod,
-        "Phone Number:",
-        phoneNumber,
-      );
+
+    // Ensure this is the final step before sending the email
+    if (step === 4 && phoneNumber && isValidPhoneNumber(phoneNumber)) {
+      const formData = {
+        name: name,
+        method: contactMethod,
+        phone: phoneNumber,
+      };
+
+      // Send email using EmailJS
+      emailjs
+        .send(
+          "service_x457k2r",
+          "template_rpyinbp",
+          formData,
+          "LGkUMEufUFextj5AI",
+        )
+        .then(
+          (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+            // Advance to a success message or perform other success logic
+            setStep(step + 1);
+          },
+          (err) => {
+            console.log("FAILED...", err);
+            // Optionally handle the error state here
+          },
+        );
     } else {
+      // Handle validation failure or incorrect step
       setPhoneNumberValid(false);
     }
   };
@@ -156,8 +175,9 @@ export default function Contact() {
               <p className="text-base text-red-100">* Invalid phone number.</p>
             )}
             <button
+              type="submit"
               className="mt-4 flex items-center justify-center rounded-none border border-white bg-slate-900 px-8 py-3 text-xl font-semibold text-white ring-white transition-all hover:ring-2"
-              onClick={(e) => handlePhoneNumberSubmit(e)}
+              // onClick={(e) => handleFormSubmit(e)}
               // disabled={!phoneNumberValid}
             >
               Get My Free Quote
@@ -172,7 +192,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="bg-white bg-opacity-50 py-24">
+    <div className="bg-white bg-opacity-50 pb-48 pt-24">
       <div className="mx-auto w-[95%] rounded-xl border-8 border-white bg-oj-500 bg-opacity-100 ring-8 ring-black">
         <div className="mx-auto grid w-[90%] grid-cols-1 lg:grid-cols-2">
           <div className="mx-auto flex flex-col justify-center px-8 py-16 text-center text-5xl font-semibold text-white lg:text-left">
@@ -185,7 +205,10 @@ export default function Contact() {
               <span className="whitespace-nowrap">no time!</span>
             </p>
           </div>
-          <form className="mx-auto mb-16 flex w-11/12 flex-col justify-center border-white px-16 py-16 text-3xl font-semibold text-white lg:my-16 lg:ml-auto lg:text-4xl">
+          <form
+            onSubmit={handleFormSubmit}
+            className="mx-auto mb-16 flex w-11/12 flex-col justify-center border-white px-16 py-16 text-3xl font-semibold text-white lg:my-16 lg:ml-auto lg:text-4xl"
+          >
             {renderStepContent()}
           </form>
         </div>
