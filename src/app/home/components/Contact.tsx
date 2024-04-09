@@ -22,8 +22,8 @@ const formSchema = z.object({
 });
 
 export default function Contact() {
-  const [step, setStep] = useState(1);
-  const [name, setName] = useState("");
+  const [step, setStep] = useState(10);
+  const [name, setName] = useState("Bob");
   const [contactMethod, setContactMethod] = useState("");
   const [phoneNumber, setPhoneNumber] = useState<string | undefined>(undefined);
   const [nameValid, setNameValid] = useState(true);
@@ -187,7 +187,21 @@ export default function Contact() {
         );
 
       default:
-        return <p>We will be in touch soon!</p>;
+        // return <p>We will be in touch soon!</p>;
+        return (
+          <div className="mx-auto flex flex-col gap-y-4 text-2xl">
+            <p className="">
+              Thanks {name}! I will get in touch with you ASAP!
+            </p>
+
+            {/* <p className="font-normal">
+              In the meantime, feel free to check out the{" "}
+              <a href="#" className="text-white underline">
+                FAQs.
+              </a>
+            </p> */}
+          </div>
+        );
     }
   };
 
