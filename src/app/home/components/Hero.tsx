@@ -55,7 +55,7 @@ export default function Hero() {
           href="#"
           className="absolute bottom-20 left-1/2 z-10 mx-auto -translate-x-1/2 overflow-hidden rounded-full border-2 border-white bg-oj-500 px-5 py-2.5 text-xl font-medium capitalize tracking-normal text-white shadow-lg  transition-all duration-300 ease-in-out hover:bg-oj-400 hover:shadow-xl"
         >
-          Give me a quote
+          Get me a quote
         </a>
       </div>
       {/* drop shadow */}

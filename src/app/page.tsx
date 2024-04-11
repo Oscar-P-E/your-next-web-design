@@ -2,7 +2,7 @@ import Hero from "./home/components/Hero";
 import Header from "./components/Header";
 import About from "./home/components/About";
 import Services from "./home/components/Services";
-import Contact from "./home/components/Contact";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 // import GlowingBlob from "./components/GlowingBlob";
 

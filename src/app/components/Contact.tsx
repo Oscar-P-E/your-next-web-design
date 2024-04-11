@@ -22,8 +22,8 @@ const formSchema = z.object({
 });
 
 export default function Contact() {
-  const [step, setStep] = useState(10);
-  const [name, setName] = useState("Bob");
+  const [step, setStep] = useState(1);
+  const [name, setName] = useState("");
   const [contactMethod, setContactMethod] = useState("");
   const [phoneNumber, setPhoneNumber] = useState<string | undefined>(undefined);
   const [nameValid, setNameValid] = useState(true);
@@ -99,10 +99,10 @@ export default function Contact() {
         return (
           <div className="flex flex-col">
             <button
-              className="mx-auto mb-16 rounded-none border-2 border-slate-200 bg-slate-950 px-12 py-4 text-3xl font-semibold text-white ring-slate-200 transition-all hover:bg-emerald-500 lg:my-12"
+              className="mx-auto mb-16 rounded-lg border-2 border-slate-200 bg-emerald-500 px-12 py-4 text-3xl font-semibold capitalize text-white ring-slate-200 transition-all hover:bg-emerald-400 lg:my-12"
               onClick={() => setStep(step + 1)}
             >
-              I want a free quote
+              Let&apos;s talk!
             </button>
           </div>
         );
@@ -176,11 +176,11 @@ export default function Contact() {
             )}
             <button
               type="submit"
-              className="mt-4 flex items-center justify-center rounded-none border border-white bg-slate-900 px-8 py-3 text-xl font-semibold text-white ring-white transition-all hover:ring-2"
+              className="mt-4 flex items-center justify-center rounded-none border border-white bg-slate-900 px-8 py-3 text-xl font-semibold text-white ring-white transition-all hover:bg-emerald-500 hover:ring-2"
               // onClick={(e) => handleFormSubmit(e)}
               // disabled={!phoneNumberValid}
             >
-              Get My Free Quote
+              Let&apos;s Go!
               <RocketLaunchIcon className="ml-4 h-6 w-6 text-white" />
             </button>
           </div>
@@ -190,9 +190,8 @@ export default function Contact() {
         // return <p>We will be in touch soon!</p>;
         return (
           <div className="mx-auto flex flex-col gap-y-4 text-2xl">
-            <p className="">
-              Thanks {name}! I will get in touch with you ASAP!
-            </p>
+            <p className="">Thanks {name}!</p>
+            <p>I got your number and I&apos;ll get in touch with you ASAP!</p>
 
             {/* <p className="font-normal">
               In the meantime, feel free to check out the{" "}
@@ -211,11 +210,11 @@ export default function Contact() {
         <div className="mx-auto grid w-[90%] grid-cols-1 lg:grid-cols-2">
           <div className="mx-auto flex flex-col justify-center px-8 py-16 text-center text-5xl font-semibold text-white lg:text-left">
             <p className="pb-8 font-bold text-slate-950">
-              Ready to get started on{" "}
+              Want to discuss{" "}
               <span className="whitespace-nowrap">your project?</span>
             </p>
             <p className="text-slate-100">
-              Get a free quotation in{" "}
+              Get a free quote in{" "}
               <span className="whitespace-nowrap">no time!</span>
             </p>
           </div>

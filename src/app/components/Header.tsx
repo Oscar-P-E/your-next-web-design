@@ -12,6 +12,8 @@ import {
   CurrencyDollarIcon,
   RocketLaunchIcon,
   EnvelopeIcon,
+  PhotoIcon,
+  QuestionMarkCircleIcon,
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon, PhoneIcon } from "@heroicons/react/20/solid";
 
@@ -36,10 +38,10 @@ const products = [
     icon: DevicePhoneMobileIcon as React.ElementType,
   },
   {
-    name: "Integrations",
-    description: "Connect with third-party tools",
+    name: "Content Creation",
+    description: "The most underrated way to make your website great",
     href: "#",
-    icon: SquaresPlusIcon as React.ElementType,
+    icon: PhotoIcon as React.ElementType,
   },
   {
     name: "Conversion & SEO Optimisation",
@@ -47,18 +49,12 @@ const products = [
     href: "#",
     icon: CurrencyDollarIcon as React.ElementType,
   },
-  {
-    name: "Logos & Branding",
-    description: "Professional and memorable branding",
-    href: "#",
-    icon: FingerPrintIcon as React.ElementType,
-  },
 ];
 const callsToAction = [
   {
-    name: "Questions?",
+    name: "FAQs",
     href: "#",
-    icon: EnvelopeIcon as React.ElementType,
+    icon: QuestionMarkCircleIcon as React.ElementType,
   },
   { name: "Call Now", href: "#", icon: PhoneIcon as React.ElementType },
 ];
@@ -78,7 +74,7 @@ export default function Example() {
       >
         <div className="flex lg:flex-1">
           <a
-            href="#"
+            href="/"
             className="text-gradient-animation-dark -m-1.5 scale-125 p-1.5 font-black text-slate-900"
           >
             <span className="sr-only">Your Next Web Design</span>Y
@@ -98,13 +94,13 @@ export default function Example() {
 
         <Popover.Group className="z-20 hidden lg:flex lg:gap-x-12">
           <a
-            href="#"
+            href="/"
             className="text-sm font-semibold leading-6 text-slate-900"
           >
             Home
           </a>
           <a
-            href="#"
+            href="/about"
             className="text-sm font-semibold leading-6 text-slate-900"
           >
             About
@@ -201,9 +197,9 @@ export default function Example() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5 font-black">
+            <a href="/" className="-m-1.5 p-1.5 font-black">
               <span className="sr-only">Your Next Web Design</span>Y
               <span className="-ml-0.5 italic text-oj-500">N</span>WD
             </a>
@@ -220,13 +216,13 @@ export default function Example() {
             <div className="-my-6 divide-y divide-slate-500/10">
               <div className="space-y-2 py-6">
                 <a
-                  href="#"
+                  href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50"
                 >
                   Home
                 </a>
                 <a
-                  href="#"
+                  href="/about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50"
                 >
                   About
@@ -273,7 +269,7 @@ export default function Example() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50"
                 >
-                  See Pricing <span aria-hidden="true">&rarr;</span>
+                  Website Pricing <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>
             </div>
