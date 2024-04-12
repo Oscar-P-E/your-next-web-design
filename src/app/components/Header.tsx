@@ -5,13 +5,10 @@ import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
   ChartPieIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
   DevicePhoneMobileIcon,
   CurrencyDollarIcon,
   RocketLaunchIcon,
-  EnvelopeIcon,
   PhotoIcon,
   QuestionMarkCircleIcon,
 } from "@heroicons/react/24/outline";
@@ -22,31 +19,31 @@ const products = [
     name: "Website Design & Development",
     description:
       "Get your business online with a professional and effective website",
-    href: "#",
+    href: "/services",
     icon: RocketLaunchIcon as React.ElementType,
   },
   {
     name: "Website Redesign & Optimisation",
     description: "Take your website to the next level",
-    href: "#",
+    href: "/services",
     icon: ChartPieIcon as React.ElementType,
   },
   {
     name: "Responsive Design",
     description: "More than half of your visitors are on mobile",
-    href: "#",
+    href: "/services",
     icon: DevicePhoneMobileIcon as React.ElementType,
   },
   {
     name: "Content Creation",
     description: "The most underrated way to make your website great",
-    href: "#",
+    href: "/services",
     icon: PhotoIcon as React.ElementType,
   },
   {
     name: "Conversion & SEO Optimisation",
     description: "Get visitors and turn them into customers",
-    href: "#",
+    href: "/services",
     icon: CurrencyDollarIcon as React.ElementType,
   },
 ];

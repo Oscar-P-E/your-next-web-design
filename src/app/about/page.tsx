@@ -6,17 +6,18 @@ export default function AboutPage() {
   return (
     <main>
       <Header />
-      <div className="mx-auto bg-white pb-24 pt-12">
+      <div className="w-full bg-white pb-24 pt-12">
         <div className="prose prose-xl prose-slate mx-auto">
           {/* <div className="mx-auto flex w-full flex-col justify-center"> */}
-          <h4 className=" pb-4 text-center font-semibold uppercase opacity-30">
+          <h4 className="pb-4 text-center font-semibold uppercase opacity-30">
             Your Next Web Design
           </h4>
           <h1 className="mx-auto max-w-xl pb-12 text-center text-7xl font-semibold tracking-tight text-oj-500">
             What is good web design?
           </h1>
+
           {/* </div> */}
-          <div className="mx-auto w-[95%]">
+          <div className="mx-auto w-[95%] lg:w-full">
             <h3 className="font-bold tracking-tight">
               Good design vs Bad design
             </h3>

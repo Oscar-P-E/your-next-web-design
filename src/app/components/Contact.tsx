@@ -1,25 +1,10 @@
 "use client";
 
-import { type MouseEvent, useState } from "react";
+import { useState } from "react";
 import { RocketLaunchIcon } from "@heroicons/react/24/outline";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
-import { z } from "zod";
 import emailjs from "@emailjs/browser";
 import "react-phone-number-input/style.css";
-
-const formSchema = z.object({
-  name: z.string().min(1, "Name is required."),
-  contactMethod: z
-    .union([
-      z.literal("Phone Call"),
-      z.literal("Text / SMS"),
-      z.literal("Meet for Coffee"),
-    ])
-    .optional(),
-  phoneNumber: z.string().refine((val) => isValidPhoneNumber(val), {
-    message: "Invalid phone number.",
-  }),
-});
 
 export default function Contact() {
   const [step, setStep] = useState(1);
