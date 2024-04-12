@@ -15,6 +15,7 @@ export default function App() {
       <Services />
       {/* <Testimonials /> */}
       {/* <FAQ /> */}
+      <div id="contact" />
       <Contact />
       <Footer />
     </main>

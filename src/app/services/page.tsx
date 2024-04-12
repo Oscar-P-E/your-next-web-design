@@ -9,17 +9,17 @@ export default function ServicesPage() {
       <div className="w-full bg-white pb-24 pt-12">
         <div className="prose prose-xl prose-slate mx-auto">
           {/* <div className="mx-auto flex w-full flex-col justify-center"> */}
-          <h4 className="pb-4 text-center font-semibold uppercase opacity-30">
+          <h4 className="pb-2 text-center text-lg opacity-35">
             Your Next Web Design
           </h4>
-          <h1 className="mx-auto max-w-xl pb-12 text-center text-7xl font-semibold tracking-tight text-oj-500">
+          <h1 className="mx-auto max-w-xl pb-12 text-center text-7xl font-extrabold tracking-tight text-oj-500">
             Some of the things I do
           </h1>
           {/* </div> */}
           <div className="prose-p:my-0 prose-h3:my-0 mx-auto grid w-[90%] grid-cols-2 items-center gap-x-[5%] gap-y-12 lg:w-full">
             {/* <div className="col-span-2 border-y"></div> */}
 
-            <h3 className="bg-gradient-to-r from-black bg-clip-text font-bold tracking-tight text-indigo-500 text-transparen">
+            <h3 className="text-transparen bg-gradient-to-r from-black bg-clip-text font-bold tracking-tight text-indigo-500">
               Website Design & Development
             </h3>
             <p className="">
@@ -31,8 +31,8 @@ export default function ServicesPage() {
             <div className="col-span-2 border-y"></div>
 
             <h3
-              className="bg-gradient-to-r from-black bg-clip-text
-font-bold tracking-tight text-oj-500 text-transparen"
+              className="text-transparen bg-gradient-to-r from-black
+bg-clip-text font-bold tracking-tight text-oj-500"
             >
               Website Redesign & Optimisation
             </h3>
@@ -46,8 +46,8 @@ font-bold tracking-tight text-oj-500 text-transparen"
             <div className="col-span-2 border-y"></div>
 
             <h3
-              className="bg-gradient-to-r from-black bg-clip-text
-font-bold tracking-tight text-transparen text-yellow-500"
+              className="text-transparen bg-gradient-to-r from-black
+bg-clip-text font-bold tracking-tight text-yellow-500"
             >
               Responsive Design
             </h3>
@@ -59,8 +59,8 @@ font-bold tracking-tight text-transparen text-yellow-500"
             <div className="col-span-2 border-y"></div>
 
             <h3
-              className="bg-gradient-to-r from-black bg-clip-text
-font-bold tracking-tight text-emerald-500 text-transparen"
+              className="text-transparen bg-gradient-to-r from-black
+bg-clip-text font-bold tracking-tight text-emerald-500"
             >
               Content Creation
             </h3>
@@ -72,8 +72,8 @@ font-bold tracking-tight text-emerald-500 text-transparen"
             <div className="col-span-2 border-y"></div>
 
             <h3
-              className="bg-gradient-to-r from-black bg-clip-text
-font-bold tracking-tight text-cyan-500 text-transparen"
+              className="text-transparen bg-gradient-to-r from-black
+bg-clip-text font-bold tracking-tight text-cyan-500"
             >
               Conversion Rate & Search Engine Optimisation
             </h3>
@@ -126,7 +126,7 @@ font-bold tracking-tight text-cyan-500 text-transparen"
           </div>
         </div>
       </div>
-      <div id="contact"></div>
+      <div id="contact" />
       <Contact />
       <Footer />
     </main>

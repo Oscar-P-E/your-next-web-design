@@ -28,7 +28,7 @@ export default function Services() {
                   </a>
                 </span>
               </p>
-              <p>
+              <p className="pb-8">
                 Most of that evaluation is based on things such as the user
                 experience (UX) and perception of value.
               </p>
