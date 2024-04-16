@@ -6,8 +6,8 @@ import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import emailjs from "@emailjs/browser";
 import "react-phone-number-input/style.css";
 
-export default function Contact() {
-  const [step, setStep] = useState(1);
+export default function Contact({ customStep = 1 }) {
+  const [step, setStep] = useState(customStep);
   const [name, setName] = useState("");
   const [contactMethod, setContactMethod] = useState("");
   const [phoneNumber, setPhoneNumber] = useState<string | undefined>(undefined);

@@ -170,7 +170,7 @@ export default function Example() {
           </Popover>
 
           <a
-            href="#"
+            href="/contact"
             className="text-sm font-semibold leading-6 text-slate-900"
           >
             Contact
@@ -179,10 +179,10 @@ export default function Example() {
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
-            href="#"
+            href="/contact"
             className="text-base font-semibold leading-6 text-oj-500 transition-all duration-300 ease-in-out"
           >
-            Website Pricing <span aria-hidden="true">&rarr;</span>
+            Get a Free Quote <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
@@ -255,7 +255,7 @@ export default function Example() {
                 </Disclosure>
 
                 <a
-                  href="#"
+                  href="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50"
                 >
                   Contact
@@ -263,10 +263,10 @@ export default function Example() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50"
                 >
-                  Website Pricing <span aria-hidden="true">&rarr;</span>
+                  Get a Free Quote <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>
             </div>

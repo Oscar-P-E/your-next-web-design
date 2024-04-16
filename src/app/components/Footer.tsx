@@ -22,40 +22,44 @@ export default function Footer() {
           <h3 className="text-lg font-bold">Browse</h3>
           <ul className="flex flex-col gap-4">
             <li className="">
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li className="">
-              <a href="#">About</a>
+              <a href="/about">About</a>
             </li>
             <li className="">
-              <a href="#">Services</a>
+              <a href="/services">Services</a>
             </li>
             <li className="">
-              <a href="#">Contact</a>
+              <a href="/contact">Contact</a>
             </li>
           </ul>
         </div>
 
         <div className="flex max-w-[25%] flex-col gap-5">
-          <h3 className="text-lg font-bold">Services</h3>
+          <h3 className="text-lg font-bold">
+            <a href="/services">Services</a>
+          </h3>
           <ul className="flex flex-col gap-4">
             <li className="">
-              <a href="#">Website Design</a>
+              <a href="/services">Website Design</a>
             </li>
             <li className="">
-              <a href="#">Website Redesign</a>
+              <a href="/services">Website Redesign</a>
             </li>
             <li className="">
-              <a href="#">SEO Services</a>
+              <a href="/services">SEO Services</a>
             </li>
             <li className="">
-              <a href="#">Content Creation</a>
+              <a href="/services">Content Creation</a>
             </li>
           </ul>
         </div>
 
         <div className="flex max-w-[25%] flex-col gap-5">
-          <h3 className="text-lg font-bold">Contact</h3>
+          <h3 className="text-lg font-bold">
+            <a href="/contact">Contact</a>
+          </h3>
           <ul className="flex flex-col gap-4">
             <li className="flex items-center">
               <MapPinIcon className="mr-2 h-5 w-5 shrink-0" />
@@ -63,11 +67,13 @@ export default function Footer() {
             </li>
             <li className="flex items-center">
               <EnvelopeIcon className="mr-2 h-5 w-5 shrink-0" />
-              <a href="#">oscar@yournextwebdesign.com.au</a>
+              <a href="mailto:oscar@yournextwebdesign.com.au">
+                oscar@yournextwebdesign.com.au
+              </a>
             </li>
             <li className="flex items-center">
               <PhoneIcon className="mr-2 h-5 w-5 shrink-0" />
-              <a href="#">(+61) 0421 400 082</a>
+              <a href="tel:+61421400082">(+61) 0421 400 082</a>
             </li>
           </ul>
         </div>

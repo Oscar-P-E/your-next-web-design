@@ -13,7 +13,7 @@ import { JetBrains_Mono as Mono } from "next/font/google";
 const mono = Mono({
   subsets: ["latin"],
   variable: "--font-mono",
-  weight: "400",
+  weight: ["400", "600"],
 });
 
 const sans = Sans({
