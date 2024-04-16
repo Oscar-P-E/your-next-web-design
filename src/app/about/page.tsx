@@ -125,8 +125,8 @@ export default function AboutPage() {
                 </sup>
               </li>
               <li>
-                Web design forms 75% of the judgment of a company&apos;s
-                credibility.
+                75% of judgments about a company&apos;s credibility are based on
+                the company&apos;s website design.
                 <sup>
                   <a href="http://credibility.stanford.edu/guidelines/index.html">
                     (source)

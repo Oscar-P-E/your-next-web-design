@@ -23,7 +23,10 @@ export default function Services() {
                 Your website design accounts for about 75% of the evaluation of
                 your credibility.
                 <span className="inline-flex align-top">
-                  <a href="#" className="p-0.5 text-xs font-bold opacity-50">
+                  <a
+                    href="https://credibility.stanford.edu/guidelines/index.html"
+                    className="p-0.5 text-xs font-bold opacity-50"
+                  >
                     (source)
                   </a>
                 </span>
@@ -37,7 +40,7 @@ export default function Services() {
                 devices, and prioritises converting your visitors.
               </p> */}
               <a
-                href="#"
+                href="/contact"
                 className="mb-2 mt-auto flex items-center gap-2 rounded-3xl bg-black bg-opacity-10 px-4 py-2.5 text-lg font-semibold text-white opacity-90 transition-all hover:bg-white hover:text-black"
               >
                 <ArrowUpRightIcon className="h-7 w-7" />
@@ -75,7 +78,7 @@ export default function Services() {
                 conversion optimised using data-supported practices.
               </p>
               <a
-                href="#"
+                href="/contact"
                 className="mb-2 mt-auto flex items-center gap-2 rounded-3xl bg-black bg-opacity-10 px-4 py-2.5 text-lg font-semibold text-white opacity-90 transition-all hover:bg-white hover:text-black"
               >
                 <ArrowUpRightIcon className="h-7 w-7" />
@@ -108,7 +111,7 @@ export default function Services() {
                 think outside the box.
               </p>
               <a
-                href="#"
+                href="/contact"
                 className="mb-2 mt-auto flex items-center gap-2 rounded-3xl bg-black bg-opacity-10 px-4 py-2.5 text-lg font-semibold text-white opacity-90 transition-all hover:bg-white hover:text-black"
               >
                 <ArrowUpRightIcon className="h-7 w-7" />
