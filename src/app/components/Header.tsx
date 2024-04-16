@@ -48,12 +48,16 @@ const products = [
   },
 ];
 const callsToAction = [
+  // {
+  //   name: "FAQs",
+  //   href: "#",
+  //   icon: QuestionMarkCircleIcon as React.ElementType,
+  // },
   {
-    name: "FAQs",
-    href: "#",
-    icon: QuestionMarkCircleIcon as React.ElementType,
+    name: "Got Questions? Let's have a chat",
+    href: "/contact",
+    icon: PhoneIcon as React.ElementType,
   },
-  { name: "Call Now", href: "#", icon: PhoneIcon as React.ElementType },
 ];
 
 function classNames(...classes: string[]) {
@@ -130,7 +134,7 @@ export default function Example() {
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-slate-50 group-hover:bg-white">
                         <item.icon
-                          className="h-6 w-6 text-slate-600 group-hover:text-indigo-600"
+                          className="h-6 w-6 text-slate-600 group-hover:text-oj-400"
                           aria-hidden="true"
                         />
                       </div>
@@ -150,12 +154,12 @@ export default function Example() {
                   ))}
                 </div>
 
-                <div className="grid grid-cols-2 divide-x divide-slate-900/5 bg-slate-50">
+                <div className="grid grid-cols-1 divide-x divide-slate-900/5 bg-slate-50">
                   {callsToAction.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-slate-900 hover:bg-slate-100"
+                      className="flex items-center justify-center gap-x-3 p-3 text-sm font-semibold leading-6 text-slate-900 hover:bg-slate-100"
                     >
                       <item.icon
                         className="h-5 w-5 flex-none text-slate-400"
