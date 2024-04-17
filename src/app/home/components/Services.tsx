@@ -2,15 +2,15 @@ import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 
 export default function Services() {
   return (
-    <div className="mx-auto rounded-[3rem] bg-white bg-opacity-50 py-48 font-medium text-slate-950">
+    <div className="mx-auto rounded-[3rem] bg-white bg-opacity-50 py-8 font-medium text-slate-950 md:py-48">
       <div className="mx-auto w-[95vw] max-w-7xl px-[2vw]">
-        <h2 className="pb-24 text-center text-8xl font-semibold tracking-tight text-slate-800">
+        <h2 className="pb-12 text-center text-7xl font-semibold  tracking-tight text-slate-800 md:pb-24 md:text-8xl">
           Our Services
         </h2>
         <div className="flex flex-col justify-center gap-x-[2vw] gap-y-4 lg:flex-row">
           {/* blue card */}
           <div className="flex flex-col rounded-3xl transition-all duration-500 hover:scale-[1.03] hover:shadow-xl lg:w-1/3">
-            <div className="rounded-t-3xl bg-cyan-400 px-12 py-8 text-6xl font-semibold tracking-tight text-slate-950 lg:px-[3vw] xl:px-12">
+            <div className="rounded-t-3xl bg-cyan-400 px-12 py-8 text-5xl font-semibold tracking-tight text-slate-950 md:text-6xl lg:px-[3vw] xl:px-12">
               Website <span className="font- text-white">Upgrade</span>
             </div>
             <div className="flex grow flex-col rounded-b-3xl bg-cyan-500 px-12 py-8 text-lg lg:px-[3vw] xl:px-12">
@@ -51,7 +51,7 @@ export default function Services() {
 
           {/* orange card */}
           <div className="flex flex-col rounded-3xl transition-all duration-500 hover:scale-[1.03] hover:shadow-xl lg:w-1/3">
-            <div className="rounded-t-3xl bg-oj-400 px-12 py-8 text-6xl font-semibold tracking-tight text-slate-950 lg:px-[3vw] xl:px-12">
+            <div className="rounded-t-3xl bg-oj-400 px-12 py-8 text-5xl font-semibold tracking-tight text-slate-950 md:text-6xl lg:px-[3vw] xl:px-12">
               Website <span className="text-white">Creation</span>
             </div>
             <div className="flex grow flex-col rounded-b-3xl bg-oj-500 px-12 py-8 text-lg lg:px-[3vw] xl:px-12">
@@ -89,7 +89,7 @@ export default function Services() {
 
           {/* green card */}
           <div className="flex flex-col rounded-3xl transition-all duration-500 hover:scale-[1.03] hover:shadow-xl lg:w-1/3">
-            <div className="rounded-t-3xl bg-emerald-400 px-12 py-8 text-6xl font-semibold tracking-tight text-slate-950 lg:px-[3vw] xl:px-12">
+            <div className="rounded-t-3xl bg-emerald-400 px-12 py-8 text-5xl font-semibold tracking-tight text-slate-950 md:text-6xl lg:px-[3vw] xl:px-12">
               <span className="whitespace-nowrap">Authentic</span>{" "}
               <span className="text-white">Content</span>
             </div>

@@ -84,7 +84,7 @@ export default function Contact({ customStep = 1 }) {
         return (
           <div className="flex flex-col">
             <button
-              className="mx-auto mb-16 rounded-lg border-2 border-slate-200 bg-emerald-500 px-12 py-4 text-3xl font-semibold capitalize text-white ring-slate-200 transition-all hover:bg-emerald-400 lg:my-12"
+              className="mx-auto rounded-lg border-2 border-slate-200 bg-emerald-500 px-6 py-2 text-xl font-semibold capitalize text-white ring-slate-200 transition-all hover:bg-emerald-400 md:px-12 md:py-4 md:text-3xl lg:my-12 lg:mb-16"
               onClick={() => setStep(step + 1)}
             >
               Let&apos;s talk!
@@ -93,10 +93,10 @@ export default function Contact({ customStep = 1 }) {
         );
       case 2:
         return (
-          <div className="mx-auto flex flex-col gap-y-4 text-2xl">
+          <div className="mx-auto flex flex-col gap-y-4 text-xl md:text-2xl">
             <p className="text-center">
               How would you like to get{" "}
-              <span className="whitespace-nowrap">in touch?</span>
+              <span className="md:whitespace-nowrap">in touch?</span>
             </p>
             <button
               onClick={(e) => handleContactMethodClick("Phone Call", e)}
@@ -120,7 +120,7 @@ export default function Contact({ customStep = 1 }) {
         );
       case 3:
         return (
-          <div className="mx-auto flex flex-col gap-y-4 text-2xl">
+          <div className="mx-auto mb-4 flex flex-col gap-y-4 text-xl md:mb-0 md:text-2xl">
             <p className="text-center">What&apos;s your name?</p>
             <input
               className="rounded-none bg-white px-6 py-1.5  font-normal text-slate-900"
@@ -141,7 +141,7 @@ export default function Contact({ customStep = 1 }) {
         );
       case 4:
         return (
-          <div className="mx-auto flex flex-col gap-y-4 text-2xl">
+          <div className="mx-auto flex flex-col gap-y-4 text-xl md:text-2xl">
             <p className="text-center">
               Thanks {name}! What&apos;s the best number to reach you on?
             </p>
@@ -154,14 +154,14 @@ export default function Contact({ customStep = 1 }) {
               addInternationalOption={false}
               limitMaxLength={true}
               countryCallingCodeEditable={false}
-              className="w-full rounded-none bg-white px-8 py-3 text-xl font-normal text-slate-900 "
+              className="w-full rounded-none bg-white px-4 py-3 text-lg font-normal text-slate-900 md:px-8 "
             />
             {submitAttempted && !phoneNumberValid && (
               <p className="text-base text-red-100">* Invalid phone number.</p>
             )}
             <button
               type="submit"
-              className="mt-4 flex items-center justify-center rounded-none border border-white bg-slate-900 px-8 py-3 text-xl font-semibold text-white ring-white transition-all hover:bg-emerald-500 hover:ring-2"
+              className="mt-4 flex items-center justify-center rounded-none border border-white bg-slate-900 px-4 py-3 text-lg font-semibold text-white ring-white transition-all hover:bg-emerald-500 hover:ring-2 md:px-8"
               // onClick={(e) => handleFormSubmit(e)}
               // disabled={!phoneNumberValid}
             >
@@ -190,22 +190,22 @@ export default function Contact({ customStep = 1 }) {
   };
 
   return (
-    <div className="bg-white bg-opacity-50 pb-48 pt-24">
-      <div className="mx-auto w-[95%] rounded-xl border-8 border-white bg-oj-500 bg-opacity-100 ring-8 ring-black">
-        <div className="mx-auto grid w-[90%] grid-cols-1 lg:grid-cols-2">
-          <div className="mx-auto flex flex-col justify-center px-8 py-16 text-center text-5xl font-semibold text-white lg:text-left">
+    <div className="bg-white bg-opacity-50 pb-24 pt-24 md:pb-48">
+      <div className="mx-auto w-[95%] rounded-xl border-4 border-white bg-oj-500 bg-opacity-100 ring-4 ring-black md:border-8 md:ring-8">
+        <div className="mx-auto grid w-[95%] grid-cols-1 px-2 md:w-[90%] lg:grid-cols-2">
+          <div className="mx-auto flex flex-col justify-center py-12 text-center text-3xl font-semibold text-white md:px-8 md:py-16 md:text-5xl lg:text-left">
             <p className="pb-8 font-bold text-slate-950">
               Want to discuss{" "}
-              <span className="whitespace-nowrap">your project?</span>
+              <span className="md:whitespace-nowrap">your project?</span>
             </p>
-            <p className="text-slate-100">
+            <p className="font-medium text-slate-100">
               Get a free quote in{" "}
               <span className="whitespace-nowrap">no time!</span>
             </p>
           </div>
           <form
             onSubmit={handleFormSubmit}
-            className="mx-auto mb-16 flex w-11/12 flex-col justify-center border-white px-16 py-16 text-3xl font-semibold text-white lg:my-16 lg:ml-auto lg:text-4xl"
+            className="mx-auto mb-12 flex w-11/12 flex-col justify-center border-white text-3xl font-semibold text-white md:mb-16 md:px-16 md:py-16 lg:my-16 lg:ml-auto lg:text-4xl"
           >
             {renderStepContent()}
           </form>

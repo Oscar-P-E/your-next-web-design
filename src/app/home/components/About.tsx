@@ -1,5 +1,3 @@
-
-
 // import { useEffect } from "react";
 
 export default function About() {
@@ -38,23 +36,23 @@ export default function About() {
     <>
       <div className="relative -mb-48 pb-24 pt-24 tracking-tight">
         {/* card 1 */}
-        <div className="sticky top-[calc(1rem+var(--header-height))] mx-auto mb-[calc(12rem+2px)] grid min-h-[calc(95svh-var(--header-height))] w-[95%] grid-flow-row grid-cols-2 rounded-[5rem] bg-white">
-          <div className="flex flex-col justify-center rounded-l-[5rem] bg-cyan-500 px-[6vw] py-4 text-3xl font-semibold text-white lg:text-5xl lg:leading-[3.3rem]">
-            <p className="pb-8">
+        <div className="top-[calc(1rem+var(--header-height))] mx-auto mb-12 grid min-h-[calc(95svh-var(--header-height))] w-[95%] grid-flow-row rounded-[5rem] bg-white md:sticky md:mb-[calc(12rem+2px)] md:grid-cols-2">
+          <div className="flex flex-col justify-center rounded-tl-[5rem] rounded-tr-[5rem] bg-cyan-500 px-12 py-16 text-3xl font-semibold text-white md:rounded-bl-[5rem] md:rounded-tr-none md:px-[6vw] md:py-4 lg:text-5xl lg:leading-[3.3rem]">
+            <p className="pb-6 md:pb-8">
               Nobody wants an{" "}
               <span className="font-bold text-cyan-950"> annoying </span>
               and
               <span className="font-bold text-cyan-950"> confusing </span>
               website,
             </p>
-            <p className="font- ">
+            <p className="">
               but this is often what you get when you hire a web designer.
             </p>
           </div>
 
-          <div className="relative flex flex-col justify-center rounded-r-[5rem] bg-cyan-800 bg-opacity-10 px-[6vw] py-24 text-4xl font-bold text-slate-900 lg:text-5xl">
+          <div className="relative flex flex-col justify-center rounded-bl-[5rem] rounded-br-[5rem] bg-cyan-800 bg-opacity-10 px-[6vw] py-12 text-3xl font-bold text-slate-900 md:rounded-bl-none md:rounded-tr-[5rem] md:py-24 lg:text-5xl">
             <div
-              className="absolute left-1/2 top-1/2 aspect-[3/2] w-11/12 -translate-x-1/2 -translate-y-1/2 -rotate-0 justify-center rounded-[5rem] bg-slate-700 bg-cover bg-center bg-no-repeat align-middle bg-blend-luminosity"
+              className="left-1/2 top-1/2 mx-auto aspect-square w-11/12 -rotate-0 justify-center rounded-full bg-slate-700 bg-cover bg-center bg-no-repeat align-middle bg-blend-luminosity md:absolute md:aspect-[3/2] md:-translate-x-1/2 md:-translate-y-1/2 md:rounded-[3rem]"
               style={{
                 backgroundImage: "url(/img/loading-still.jpg)",
               }}
@@ -63,17 +61,23 @@ export default function About() {
         </div>
 
         {/* card 2 */}
-        <div className="sticky top-[calc(1rem+var(--header-height)-1px)] mx-auto mb-[calc(12rem+1px)] grid min-h-[calc(95svh-var(--header-height)+2px)] w-[95%] rotate-0 grid-flow-row grid-cols-2 gap-0 rounded-[5rem] bg-white">
-          <div className="relative  flex flex-col justify-center rounded-l-[5rem] bg-oj-500 bg-opacity-10 px-[6vw] py-24 text-4xl font-bold text-slate-900  lg:text-5xl">
+        <div className="top-[calc(1rem+var(--header-height)-1px)] mx-auto mb-12 grid min-h-[calc(95svh-var(--header-height)+2px)] w-[95%] rotate-0 grid-flow-row gap-0 rounded-[5rem] bg-white md:sticky md:mb-[calc(12rem+1px)] md:grid-cols-2">
+          <div
+            className="relative flex flex-col justify-center rounded-tl-[5rem] rounded-tr-[5rem] bg-oj-500 bg-opacity-10 px-[6vw] py-12 text-3xl font-bold text-slate-900 md:rounded-bl-[5rem] md:rounded-tr-none
+md:py-24 lg:text-5xl"
+          >
             <div
-              className="absolute left-1/2 top-1/2 aspect-[3/2] w-11/12 -translate-x-1/2 -translate-y-1/2 rotate-0 justify-center rounded-[3rem] bg-cover bg-left bg-no-repeat align-middle "
+              className="left-1/2 top-1/2 aspect-square w-11/12 rotate-0 justify-center rounded-full bg-cover bg-left bg-no-repeat align-middle md:absolute md:aspect-[3/2] md:-translate-x-1/2 md:-translate-y-1/2 md:rounded-[3rem] "
               style={{
                 backgroundImage: `url(/img/hal-gatewood-2.jpg)`,
               }}
             ></div>
           </div>
-          <div className="lg:leading-[3.3rem flex flex-col justify-center rounded-r-[5rem] bg-oj-500 px-[6vw] py-4 text-3xl font-semibold text-white lg:text-5xl lg:leading-[3.3rem]">
-            <p className="pb-8">
+          <div
+            className="lg:leading-[3.3rem flex flex-col justify-center rounded-bl-[5rem] rounded-br-[5rem] bg-oj-500 px-12 py-16 text-3xl font-semibold text-white md:rounded-bl-none md:rounded-tr-[5rem] md:px-[6vw] md:py-4
+lg:text-5xl lg:leading-[3.3rem]"
+          >
+            <p className="pb-6 md:pb-8">
               Our websites are not only{" "}
               <span className="">
                 <span className="magic-text font-extrabold text-transparent">
@@ -93,10 +97,15 @@ export default function About() {
         </div>
 
         {/* card 3 */}
-        <div className="sticky top-[calc(1rem+var(--header-height)-3px)] mx-auto mb-[calc(12rem)] grid min-h-[calc(95svh-var(--header-height)+4px)] w-[95%] -rotate-0 grid-flow-row grid-cols-2 gap-0 rounded-[5rem] bg-white">
-          <div className="bg-opacity-  flex flex-col justify-center rounded-l-[5rem] bg-emerald-500 px-[6vw] pb-4 pt-8 text-4xl font-semibold text-white lg:text-5xl lg:leading-[3.3rem]">
-            <p className="pb-8">Take your business to the next level.</p>
-            <p>
+        <div className="top-[calc(1rem+var(--header-height)-3px)] mx-auto mb-[calc(12rem)] grid min-h-[calc(95svh-var(--header-height)+4px)] w-[95%] -rotate-0 grid-flow-row gap-0 rounded-[5rem] bg-white md:sticky md:grid-cols-2">
+          <div
+            className="flex flex-col justify-center rounded-tl-[5rem] rounded-tr-[5rem] bg-emerald-500 px-12 py-16 pb-10 text-3xl font-semibold text-white md:rounded-bl-[5rem] md:rounded-tr-none md:px-[6vw] md:pb-4 md:pt-8
+lg:text-5xl lg:leading-[3.3rem]"
+          >
+            <p className="pb-4 md:pb-8">
+              Take your business to the next level.
+            </p>
+            <p className="pb-8 md:pb-12">
               Get a professional website{" "}
               <span className="font-extrabold text-emerald-950">
                 with a purpose.
@@ -104,15 +113,18 @@ export default function About() {
             </p>
             <a
               href="#"
-              className="mt-8 flex w-fit items-center gap-2 rounded-3xl bg-white px-5 py-2.5 text-lg font-semibold text-black opacity-90 transition-all hover:opacity-100"
+              className="flex w-fit items-center gap-2 rounded-3xl bg-white px-5 py-2.5 text-lg font-semibold text-black transition-all"
             >
               Get Started <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
 
-          <div className="relative  rounded-r-[5rem] bg-emerald-500 bg-opacity-10 bg-cover bg-top text-4xl font-light text-white ">
+          <div
+            className="relative rounded-bl-[5rem] rounded-br-[5rem] bg-emerald-500 bg-opacity-10 bg-cover bg-top py-12 text-3xl font-light
+text-white md:rounded-bl-none md:rounded-tr-[5rem]"
+          >
             <div
-              className="absolute left-1/2 top-1/2 aspect-[3/2] w-11/12 -translate-x-1/2 -translate-y-1/2 rotate-[0] justify-center rounded-[5rem] bg-cover bg-right bg-no-repeat align-middle"
+              className="left-1/2 top-1/2 mx-auto aspect-square w-11/12 rotate-[0] justify-center rounded-full bg-cover bg-right bg-no-repeat align-middle md:absolute md:aspect-[3/2] md:-translate-x-1/2 md:-translate-y-1/2 md:rounded-[3rem]"
               style={{
                 backgroundImage: "url(/img/happy-customer.jpg)",
               }}
