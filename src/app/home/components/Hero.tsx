@@ -26,9 +26,9 @@ export default function Hero() {
 
   return (
     <>
-      <div className="relative h-[calc(85%-var(--header-height))] w-full overflow-hidden tracking-tighter">
+      <div className="relative h-[calc(85dvh-var(--header-height))] w-full overflow-hidden tracking-tighter">
         <div
-          className="absolute z-10 grid h-[calc(85%-var(--header-height))] w-[80%] place-items-center overflow-hidden bg-slate-800 md:w-[69.2%]"
+          className="absolute z-10 grid h-[calc(85dvh-var(--header-height))] w-[80%] place-items-center overflow-hidden bg-slate-800 md:w-[69.2%]"
           ref={leftRef}
         >
           <h2 className="mx-[10vw] w-[80vw] overflow-hidden pb-20 text-[12vw] font-extrabold text-white md:mx-[27vw] md:w-[46vw] md:text-[7vw]">
@@ -40,7 +40,7 @@ export default function Hero() {
             Web Design
           </h2>
         </div>
-        <div className="absolute right-0 grid h-[calc(85%-var(--header-height))] place-items-center overflow-hidden bg-oj-500">
+        <div className="absolute right-0 grid h-[calc(85dvh-var(--header-height))] place-items-center overflow-hidden bg-oj-500">
           {/* non-mobile devices will have a scrollbar, so we need to translate right a bit  */}
           <h2 className="mx-[10vw] w-[80vw] overflow-hidden pb-20 text-[12vw] font-extrabold text-slate-950 md:mx-[27vw] md:w-[46vw] md:text-[7vw] lg:translate-x-[14px]">
             Your{" "}
@@ -53,7 +53,7 @@ export default function Hero() {
         </div>
         <a
           href="#contact"
-          className="absolute bottom-40 md:bottom-20 left-1/2 z-10 mx-auto -translate-x-1/2 overflow-hidden rounded-full border-2 border-white bg-oj-500 px-5 py-2.5 text-normal md:text-xl font-medium capitalize tracking-normal text-white shadow-lg  transition-all duration-300 ease-in-out hover:bg-oj-400 hover:shadow-xl"
+          className="text-normal absolute bottom-40 left-1/2 z-10 mx-auto -translate-x-1/2 overflow-hidden rounded-full border-2 border-white bg-oj-500 px-5 py-2.5 font-medium capitalize tracking-normal text-white shadow-lg transition-all duration-300  ease-in-out hover:bg-oj-400 hover:shadow-xl md:bottom-20 md:text-xl"
         >
           Get a quote
         </a>
