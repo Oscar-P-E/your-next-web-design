@@ -330,6 +330,10 @@
  }
 
 .pan {
-  animation: pan 180s linear forwards infinite;
+  animation: pan 60s linear forwards infinite;
   will-change: background-position;
+
+  @media (min-width: 768px) {
+  animation: pan 180s linear forwards infinite;
+}
 }

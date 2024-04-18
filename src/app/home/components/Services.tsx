@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <div className="mx-auto rounded-[3rem] bg-white bg-opacity-50 py-8 font-medium text-slate-950 md:py-48">
       <div className="mx-auto w-[95vw] max-w-7xl px-[2vw]">
-        <h2 className="pb-12 text-center text-7xl font-semibold  tracking-tight text-slate-800 md:pb-24 md:text-8xl">
+        <h2 className="pb-12 text-center text-7xl font-semibold tracking-tight text-slate-800 md:pb-24 md:text-8xl">
           Our Services
         </h2>
         <div className="flex flex-col justify-center gap-x-[2vw] gap-y-4 lg:flex-row">
