@@ -26,9 +26,9 @@ export default function Hero() {
 
   return (
     <>
-      <div className="relative h-[calc(85svh-var(--header-height))] w-full overflow-hidden tracking-tighter">
+      <div className="relative h-[calc(85vh-var(--header-height))] w-full overflow-hidden tracking-tighter">
         <div
-          className="absolute z-10 grid h-[calc(85svh-var(--header-height))] w-[80%] place-items-center overflow-hidden bg-slate-800 md:w-[69.2%]"
+          className="absolute z-10 grid h-[calc(85vh-var(--header-height))] w-[80%] place-items-center overflow-hidden bg-slate-800 md:w-[69.2%]"
           ref={leftRef}
         >
           <h2 className="mx-[10vw] w-[80vw] overflow-hidden pb-20 text-[12vw] font-extrabold text-white md:mx-[27vw] md:w-[46vw] md:text-[7vw]">
@@ -40,7 +40,7 @@ export default function Hero() {
             Web Design
           </h2>
         </div>
-        <div className="absolute right-0 grid h-[calc(85svh-var(--header-height))] place-items-center overflow-hidden bg-oj-500">
+        <div className="absolute right-0 grid h-[calc(85vh-var(--header-height))] place-items-center overflow-hidden bg-oj-500">
           {/* non-mobile devices will have a scrollbar, so we need to translate right a bit  */}
           <h2 className="mx-[10vw] w-[80vw] overflow-hidden pb-20 text-[12vw] font-extrabold text-slate-950 md:mx-[27vw] md:w-[46vw] md:text-[7vw] lg:translate-x-[14px]">
             Your{" "}
