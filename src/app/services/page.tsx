@@ -7,7 +7,7 @@ export default function ServicesPage() {
     <main>
       <Header />
       <div className="w-full bg-white pb-24 pt-12">
-        <div className="prose prose-xl prose-slate mx-auto">
+        <div className="prose prose-xl prose-slate mx-auto w-[90%]">
           {/* <div className="mx-auto flex w-full flex-col justify-center"> */}
           <h4 className="pb-2 text-center text-lg opacity-35">
             Your Next Web Design
@@ -16,7 +16,7 @@ export default function ServicesPage() {
             Some of the things I do
           </h1>
           {/* </div> */}
-          <div className="prose-p:my-0 prose-h3:my-0 mx-auto grid w-[90%] grid-cols-2 items-center gap-x-[5%] gap-y-12 lg:w-full">
+          <div className="mx-auto flex grid-cols-2 flex-col gap-x-[5%] gap-y-12 prose-h3:my-0 prose-p:my-0 md:grid md:items-center lg:w-full">
             {/* <div className="col-span-2 border-y"></div> */}
 
             <h3 className="text-transparen bg-gradient-to-r from-black bg-clip-text font-bold tracking-tight text-indigo-500">
@@ -101,6 +101,212 @@ bg-clip-text font-bold tracking-tight text-cyan-500"
               research has shown lead to better outcomes, and I use that
               knowledge to make you a website.
             </p>
+
+            <h4 className="">
+              Here are just some of the stats that show the importance of good
+              web design:
+            </h4>
+
+            <ul className="prose-base">
+              <li>
+                38% of visitors will leave a website if the layout is ugly.
+                <sup>
+                  <a href="https://blogs.adobe.com/creative/files/2015/12/Adobe-State-of-Content-Report.pdf">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+              <li>
+                93% of people leave a website if it doesn&apos;t display
+                properly on their device.
+                <sup>
+                  <a href="https://blog.hubspot.com/marketing/web-design-stats-for-2020">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+              <li>
+                75% of judgments about a company&apos;s credibility are based on
+                the company&apos;s website design.
+                <sup>
+                  <a href="http://credibility.stanford.edu/guidelines/index.html">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+              <li>
+                Good UX can increase conversion rates by up to 400%.
+                <sup>
+                  <a href="https://www.forbes.com/sites/forbesagencycouncil/2017/03/23/the-bottom-line-why-good-ux-design-means-better-business/#42f4defa2396">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+
+              <li>
+                40% of users, and 53% of mobile users will leave a website if it
+                takes longer than 3 seconds to load.
+                <sup>
+                  <a href="https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+              <li>
+                94% of online shoppers don&apos;t trust outdated or badly
+                designed websites.
+                <sup>
+                  <a href="https://www.ukwebhostreview.com/website-and-ux-statistics/">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+
+              <li>
+                Custom content increases 82% of users&apos; trust in a company.
+                <sup>
+                  <a href="https://blog.red-website-design.co.uk/2018/07/16/web-design-stats-2018-2019-infographic/">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+              <li>
+                You are 53 times more likely to get on the first page of Google
+                if you include video content.
+                <sup>
+                  <a href="https://www.ukwebhostreview.com/website-and-ux-statistics/">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+              <li>
+                51% of respondents mentioned thorough contact information as the
+                most lacking content on vendor websites, and 54% said they would
+                leave the website.
+                <sup>
+                  <a href="https://www.huffindustrialmarketing.com/2015-Report.pdf">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+              <li>
+                70% of people look at lists with bullet points (such as this
+                one), vs 55% for lists without bullets.
+                <sup>
+                  <a href="https://www.nngroup.com/reports/how-people-read-web-eyetracking-evidence/">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+              <li>
+                86% of visitors want to see a company&apos;s products and
+                services, 64% want to contact the company, and 52% want to see
+                the About Us section.
+                <sup>
+                  <a href="https://www.huffindustrialmarketing.com/2015-Report.pdf">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+
+              <li>
+                Only 8% want to see your blog, and only 2% mentioned wanting to
+                see pricing information on the home page.
+                <sup>
+                  <a href="https://www.huffindustrialmarketing.com/2015-Report.pdf">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+
+              <li>
+                Improving website loading speed by 1 second were shown to
+                increase conversions by 27%.
+                <sup>
+                  <a href="https://www.mageplaza.com/blog/page-loading-1-second-faster-increase-conversion-rate.html">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+              <li>
+                Personalised call to actions (CTAs) perform 202% better than
+                basic CTAs.
+                <sup>
+                  <a href="https://blog.hubspot.com/marketing/personalized-calls-to-action-convert-better-data">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+
+              <li>
+                Customers are 16 times more likely to share on social media that
+                they made a purchase if they see a CTA button on the post
+                purchase page.
+                <sup>
+                  <a href="https://www.digitaloasis.com.au/10-ctas-that-increase-sales/">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+              <li>
+                If you increase the number of elements on a page from 400 to
+                6,000, conversion rates drop by 95%.
+                <sup>
+                  <a href="https://www.thinkwithgoogle.com/data/mobile-page-speed-new-industry-benchmarks-elements-reduce-conversion/">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+
+              <li>
+                Users spend an average of 5.94 seconds looking at a
+                website&apos;s main image, and colour pictures in general hold
+                attention longer than black & white pictures &ndash; 2 seconds
+                vs 0.6 seconds.
+                <sup>
+                  <a href="https://apiumtech.com/blog/key-statistics-colors-affect-sales-consciously-unconsciously/">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+
+              <li>
+                Users spend 80% of their browsing time looking at the left half
+                of the page.
+                <sup>
+                  <a href="https://www.nngroup.com/articles/horizontal-attention-leans-left/">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+              <li>
+                84% of marketers believe design driven companies outperform
+                other businesses.
+                <sup>
+                  <a href="https://econsultancy.com/reports/digital-intelligence-briefing-2018-digital-trends/">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+
+              <li>
+                58% of people searched for information about a local business
+                using voice search.
+                <sup>
+                  <a href="https://review42.com/resources/voice-search-stats/">
+                    (source)
+                  </a>
+                </sup>
+              </li>
+
+              <li>
+                Updating old blog posts with new images and content can increase
+                your traffic by up to 111%.
+                <sup>
+                  <a href="https://backlinko.com/seo-techniques">(source)</a>
+                </sup>
+              </li>
+            </ul>
 
             <p>
               My websites don&apos;t just look nice; they work nicely too.

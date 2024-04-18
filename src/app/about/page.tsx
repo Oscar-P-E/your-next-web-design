@@ -6,8 +6,8 @@ export default function AboutPage() {
   return (
     <main>
       <Header />
-      <div className="w-full bg-white pb-24 pt-12">
-        <div className="prose prose-xl prose-slate mx-auto">
+      <div className="w-full bg-white pb-24 pt-12 ">
+        <div className="prose prose-xl prose-slate mx-auto w-[90%]">
           {/* <div className="mx-auto flex w-full flex-col justify-center"> */}
           <h4 className="pb-2 text-center text-lg opacity-35">
             Your Next Web Design
