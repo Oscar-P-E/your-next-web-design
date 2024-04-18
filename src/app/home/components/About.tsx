@@ -34,7 +34,7 @@ export default function About() {
 
   return (
     <>
-      <div className="relative -mb-48 pb-24 pt-24 tracking-tight">
+      <div className="relative -mb-48 pb-24 pt-48 tracking-tight">
         {/* card 1 */}
         <div className="top-[calc(1rem+var(--header-height))] mx-auto mb-12 grid min-h-[calc(95svh-var(--header-height))] w-[95%] grid-flow-row rounded-[5rem] bg-white md:sticky md:mb-[calc(12rem+2px)] md:grid-cols-2">
           <div className="flex flex-col justify-center rounded-tl-[5rem] rounded-tr-[5rem] bg-cyan-500 px-12 py-16 text-3xl font-semibold text-white md:rounded-bl-[5rem] md:rounded-tr-none md:px-[6vw] md:py-4 lg:text-5xl lg:leading-[3.3rem]">
