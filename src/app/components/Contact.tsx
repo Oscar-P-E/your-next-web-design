@@ -200,10 +200,10 @@ export default function Contact({ customStep = 1 }) {
 
   return (
     <div className="bg-white bg-opacity-50 pb-24 pt-24 md:pb-48">
-      <div className="min-h-[calc(75svh-var(--header-height))] flex mx-auto w-[95%] rounded-xl border-4 border-white bg-oj-500 bg-opacity-100 py-16 ring-4 ring-black md:border-8 md:ring-8">
+      <div className="mx-auto flex min-h-[calc(75svh-var(--header-height))] w-[95%] rounded-xl border-4 border-white bg-oj-500 bg-opacity-100 py-16 ring-4 ring-black md:border-8 md:ring-8">
         <div className="mx-auto grid w-[95%] grid-cols-1 px-2 md:w-[90%] lg:grid-cols-2">
-          <div className="mx-auto flex flex-col justify-center py-12 text-center text-3xl font-semibold text-white md:px-8 md:py-1 md:text-5xl lg:text-left">
-            <p className="pb-8 font-bold text-slate-950">
+          <div className="mx-auto flex flex-col justify-center pb-8 text-center text-3xl font-semibold text-white md:px-8 md:py-1 md:text-5xl lg:pb-12 lg:pt-12 lg:text-left">
+            <p className="pb-6 font-bold text-slate-950 lg:pb-8">
               Want to discuss{" "}
               <span className="md:whitespace-nowrap">your project?</span>
             </p>
