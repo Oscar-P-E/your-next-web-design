@@ -82,9 +82,18 @@ export default function Contact({ customStep = 1 }) {
     switch (step) {
       case 1:
         return (
-          <div className="flex flex-col">
+          <div className="relative mt-0 flex h-full min-h-[33vh] w-full flex-col md:mt-12 lg:mt-0">
+            <div
+              className="absolute left-0 top-0 h-full w-full rounded border border-white"
+              style={{
+                backgroundImage: "url(/img/orange-phone.jpg)",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            ></div>
+              <div className="absolute left-0 top-0 h-full w-full rounded bg-white bg-opacity-5"></div>
             <button
-              className="mx-auto rounded-lg border-2 border-slate-200 bg-emerald-500 px-6 py-2 text-xl font-semibold capitalize text-white ring-slate-200 transition-all hover:bg-emerald-400 md:px-12 md:py-4 md:text-3xl lg:my-12 lg:mb-16"
+              className="absolute left-1/2 top-[56%] mx-auto w-2/3 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full border-4 border-white bg-indigo-500 px-6 py-2 text-2xl font-semibold capitalize text-white shadow-xl  ring-slate-200 transition-all hover:bg-indigo-600 md:px-12 md:py-4 md:text-3xl lg:my--20"
               onClick={() => setStep(step + 1)}
             >
               Let&apos;s talk!
@@ -191,9 +200,9 @@ export default function Contact({ customStep = 1 }) {
 
   return (
     <div className="bg-white bg-opacity-50 pb-24 pt-24 md:pb-48">
-      <div className="mx-auto w-[95%] rounded-xl border-4 border-white bg-oj-500 bg-opacity-100 ring-4 ring-black md:border-8 md:ring-8">
+      <div className="mx-auto w-[95%] rounded-xl border-4 border-white bg-oj-500 bg-opacity-100 py-16 ring-4 ring-black md:border-8 md:ring-8">
         <div className="mx-auto grid w-[95%] grid-cols-1 px-2 md:w-[90%] lg:grid-cols-2">
-          <div className="mx-auto flex flex-col justify-center py-12 text-center text-3xl font-semibold text-white md:px-8 md:py-16 md:text-5xl lg:text-left">
+          <div className="mx-auto flex flex-col justify-center py-12 text-center text-3xl font-semibold text-white md:px-8 md:py-1 md:text-5xl lg:text-left">
             <p className="pb-8 font-bold text-slate-950">
               Want to discuss{" "}
               <span className="md:whitespace-nowrap">your project?</span>
@@ -205,7 +214,7 @@ export default function Contact({ customStep = 1 }) {
           </div>
           <form
             onSubmit={handleFormSubmit}
-            className="mx-auto mb-12 flex w-11/12 flex-col justify-center border-white text-3xl font-semibold text-white md:mb-16 md:px-16 md:py-16 lg:my-16 lg:ml-auto lg:text-4xl"
+            className="md:px--16 md:py--16 mx-auto mb--12 flex w-11/12 flex-col justify-center border-white text-3xl font-semibold text-white md:mb--16 lg:my--16 lg:ml-auto lg:text-4xl"
           >
             {renderStepContent()}
           </form>
