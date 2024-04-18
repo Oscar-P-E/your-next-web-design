@@ -200,7 +200,7 @@ export default function Contact({ customStep = 1 }) {
 
   return (
     <div className="bg-white bg-opacity-50 pb-24 pt-12 md:pb-48">
-      <div className="mx-auto flex min-h-[calc(75svh-var(--header-height))] w-[95%] rounded-xl border-4 border-white bg-oj-500 bg-opacity-100 pt-12 pb-14 lg:pt-16 lg:pb-16 ring-4 ring-black md:border-8 md:ring-8">
+      <div className="mx-auto flex min-h-[calc(75svh-var(--header-height))] w-[95%] rounded-xl border-4 border-white bg-oj-500 bg-opacity-100 pt-14 pb-14 lg:pt-16 lg:pb-16 ring-4 ring-black md:border-8 md:ring-8">
         <div className="mx-auto grid w-[95%] grid-cols-1 px-2 md:w-[90%] lg:grid-cols-2">
           <div className="mx-auto flex flex-col justify-center pb-8 text-center font-semibold text-white md:px-8 md:py-1  lg:pb-12 lg:pt-12 lg:text-left">
             <p className="pb-6 lg:font-bold font-extrabold text-4xl md:text-5xl text-slate-950 lg:pb-8">
