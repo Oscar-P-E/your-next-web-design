@@ -93,7 +93,7 @@ export default function Contact({ customStep = 1 }) {
             ></div>
             <div className="absolute left-0 top-0 h-full w-full rounded bg-white bg-opacity-5"></div>
             <button
-              className="absolute left-1/2 top-[57%] mx-auto w-2/3 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full border-4 border-white bg-indigo-500 px-6 py-2 text-2xl font-semibold capitalize text-white shadow-xl  ring-slate-200 transition-all hover:bg-indigo-600 md:px-12 md:py-4 md:text-3xl lg:my--20"
+              className="absolute left-1/2 top-[57%] mx-auto w-2/3 -translate-x-1/2 -translate-y-1/2 animate-pulse whitespace-nowrap rounded-full border-4 border-white bg-indigo-500 px-6 py-2 text-2xl font-semibold capitalize text-white shadow-xl  ring-slate-200 transition-all hover:bg-indigo-600 md:px-12 md:py-4 md:text-3xl lg:my--20"
               onClick={() => setStep(step + 1)}
             >
               Let&apos;s talk!
@@ -200,14 +200,14 @@ export default function Contact({ customStep = 1 }) {
 
   return (
     <div className="bg-white bg-opacity-50 pb-24 pt-12 md:pb-48">
-      <div className="mx-auto flex min-h-[calc(75svh-var(--header-height))] w-[95%] rounded-xl border-4 border-white bg-oj-500 bg-opacity-100 pt-14 pb-14 lg:pt-16 lg:pb-16 ring-4 ring-black md:border-8 md:ring-8">
+      <div className="mx-auto flex min-h-[calc(75svh-var(--header-height))] w-[95%] rounded-xl border-4 border-white bg-oj-500 bg-opacity-100 pb-14 pt-14 ring-4 ring-black md:border-8 md:ring-8 lg:pb-16 lg:pt-16">
         <div className="mx-auto grid w-[95%] grid-cols-1 px-2 md:w-[90%] lg:grid-cols-2">
           <div className="mx-auto flex flex-col justify-center pb-8 text-center font-semibold text-white md:px-8 md:py-1  lg:pb-12 lg:pt-12 lg:text-left">
-            <p className="pb-6 lg:font-bold font-extrabold text-4xl md:text-5xl text-slate-950 lg:pb-8">
+            <p className="pb-6 text-4xl font-extrabold text-slate-950 md:text-5xl lg:pb-8 lg:font-bold">
               Want to discuss{" "}
               <span className="md:whitespace-nowrap">your project?</span>
             </p>
-            <p className="font-medium text-3xl md:text-5xl text-slate-100">
+            <p className="text-3xl font-medium text-slate-100 md:text-5xl">
               Get a free quote in{" "}
               <span className="whitespace-nowrap">no time!</span>
             </p>
