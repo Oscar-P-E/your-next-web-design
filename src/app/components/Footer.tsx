@@ -12,7 +12,7 @@ export default function Footer() {
             </a>
           </div>
           <h2 className="pb-5 text-xl font-bold">Your Next Web Design</h2>
-          <p className="font-mono opacity-60">
+          <p className="font-mono">
             A one-man web design business in Queensland that makes websites that
             do more than just look good.
           </p>

@@ -3,7 +3,8 @@ import "~/styles/globals.css";
 // import { Inter } from "next/font/google";
 import { Montserrat as Sans } from "next/font/google";
 import { Permanent_Marker as Cursive } from "next/font/google";
-import { JetBrains_Mono as Mono } from "next/font/google";
+// import { JetBrains_Mono as Mono } from "next/font/google";
+import { Space_Mono as Mono } from "next/font/google";
 
 // const inter = Inter({
 //   subsets: ["latin"],
@@ -13,7 +14,8 @@ import { JetBrains_Mono as Mono } from "next/font/google";
 const mono = Mono({
   subsets: ["latin"],
   variable: "--font-mono",
-  weight: ["400", "600"],
+  // weight: ["400", "600"],
+  weight: ["400", "700"],
 });
 
 const sans = Sans({
