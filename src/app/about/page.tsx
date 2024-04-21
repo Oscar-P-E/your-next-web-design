@@ -189,8 +189,8 @@ export default function AboutPage() {
                 </sup>
               </li>
               <li>
-                70% of people look at lists with bullet points (such as this
-                one), vs 55% for lists without bullets.
+                70% of people look at lists with bullet points (like the one you
+                are reading right now), vs 55% for lists without bullets.
                 <sup>
                   <a href="https://www.nngroup.com/reports/how-people-read-web-eyetracking-evidence/">
                     (source)
@@ -200,7 +200,8 @@ export default function AboutPage() {
               <li>
                 86% of visitors want to see a company&apos;s products and
                 services, 64% want to contact the company, and 52% want to see
-                the About Us section.
+                the About Us section. Only 8% want to see your blog, and only 2%
+                mentioned wanting to see pricing information on the home page.
                 <sup>
                   <a href="https://www.huffindustrialmarketing.com/2015-Report.pdf">
                     (source)
@@ -208,76 +209,6 @@ export default function AboutPage() {
                 </sup>
               </li>
 
-              <li>
-                Only 8% want to see your blog, and only 2% mentioned wanting to
-                see pricing information on the home page.
-                <sup>
-                  <a href="https://www.huffindustrialmarketing.com/2015-Report.pdf">
-                    (source)
-                  </a>
-                </sup>
-              </li>
-
-              <li>
-                Improving website loading speed by 1 second were shown to
-                increase conversions by 27%.
-                <sup>
-                  <a href="https://www.mageplaza.com/blog/page-loading-1-second-faster-increase-conversion-rate.html">
-                    (source)
-                  </a>
-                </sup>
-              </li>
-              <li>
-                Personalised call to actions (CTAs) perform 202% better than
-                basic CTAs.
-                <sup>
-                  <a href="https://blog.hubspot.com/marketing/personalized-calls-to-action-convert-better-data">
-                    (source)
-                  </a>
-                </sup>
-              </li>
-
-              <li>
-                Customers are 16 times more likely to share on social media that
-                they made a purchase if they see a CTA button on the post
-                purchase page.
-                <sup>
-                  <a href="https://www.digitaloasis.com.au/10-ctas-that-increase-sales/">
-                    (source)
-                  </a>
-                </sup>
-              </li>
-              <li>
-                If you increase the number of elements on a page from 400 to
-                6,000, conversion rates drop by 95%.
-                <sup>
-                  <a href="https://www.thinkwithgoogle.com/data/mobile-page-speed-new-industry-benchmarks-elements-reduce-conversion/">
-                    (source)
-                  </a>
-                </sup>
-              </li>
-
-              <li>
-                Users spend an average of 5.94 seconds looking at a
-                website&apos;s main image, and colour pictures in general hold
-                attention longer than black & white pictures &ndash; 2 seconds
-                vs 0.6 seconds.
-                <sup>
-                  <a href="https://apiumtech.com/blog/key-statistics-colors-affect-sales-consciously-unconsciously/">
-                    (source)
-                  </a>
-                </sup>
-              </li>
-
-              <li>
-                Users spend 80% of their browsing time looking at the left half
-                of the page.
-                <sup>
-                  <a href="https://www.nngroup.com/articles/horizontal-attention-leans-left/">
-                    (source)
-                  </a>
-                </sup>
-              </li>
               <li>
                 84% of marketers believe design driven companies outperform
                 other businesses.
@@ -285,24 +216,6 @@ export default function AboutPage() {
                   <a href="https://econsultancy.com/reports/digital-intelligence-briefing-2018-digital-trends/">
                     (source)
                   </a>
-                </sup>
-              </li>
-
-              <li>
-                58% of people searched for information about a local business
-                using voice search.
-                <sup>
-                  <a href="https://review42.com/resources/voice-search-stats/">
-                    (source)
-                  </a>
-                </sup>
-              </li>
-
-              <li>
-                Updating old blog posts with new images and content can increase
-                your traffic by up to 111%.
-                <sup>
-                  <a href="https://backlinko.com/seo-techniques">(source)</a>
                 </sup>
               </li>
             </ul>
