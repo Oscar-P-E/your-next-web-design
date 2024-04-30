@@ -174,6 +174,13 @@ export default function Example() {
           </Popover>
 
           <a
+            href="/portfolio"
+            className="text-sm font-semibold leading-6 text-slate-900"
+          >
+            Portfolio
+          </a>
+
+          <a
             href="/contact"
             className="text-sm font-semibold leading-6 text-slate-900"
           >
@@ -257,6 +264,14 @@ export default function Example() {
                     </>
                   )}
                 </Disclosure>
+
+                <a
+            href="/portfolio"
+            className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50"
+
+          >
+            Portfolio
+          </a>
 
                 <a
                   href="/contact"
